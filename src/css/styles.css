@@ -7,12 +7,28 @@ body {
 .title {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 1px; /* Adjust the letter spacing if you need */
+  transition: transform 0.3s ease;
 }
 
 .title:hover {
+  transform: scale(2.5) translateX(10px); /* Adjust the px value as needed */
+}
+
+
+h2 {
+  transition: transform 0.3s ease; /* This makes the scaling smooth */
+}
+
+h2:hover {
+  transform: scale(1.2); /* This scales the element to 120% of its original size on hover */
+}
+
+.magnify-on-hover {
   transition: transform 0.3s ease;
-  transform: scale(1.5);
-  /* background-color: rgba(240, 233, 233, 0.958); */
+}
+
+.magnify-on-hover:hover {
+  transform: scale(1.2);
 }
 
 .header-content {
@@ -65,7 +81,7 @@ header {
 
 #logo:hover {
   transform: scale(1.2); 
-  background-color: rgba(247, 247, 247, 0.958); /* Added a background color on hover */
+  background-color: #C0C0C0; /* Added a background color on hover */
 }
 
 .right-align {
@@ -91,7 +107,7 @@ header {
 
 #green:hover {
   transform: scale(1.2); /* Changed 'scale' to 'scale(1.2)' */
-  background-color: rgba(158, 13, 13, 0.922); /* Added a background color on hover */
+  background-color: #39FF14/* Added a background color on hover */
 }
 
 #trip-section,
