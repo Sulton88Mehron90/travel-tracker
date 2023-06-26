@@ -9,6 +9,12 @@ body {
   letter-spacing: 1px; /* Adjust the letter spacing if you need */
 }
 
+.title:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+  /* background-color: rgba(240, 233, 233, 0.958); */
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -53,13 +59,15 @@ header {
   border-radius: 50%;
   padding: 10px;
   display: inline-block;
-  transition: transform 0.3s ease; /* Changed 'all' to 'transform' */
+  transition: transform 0.3s ease;
   object-fit: contain;
 }
 
 #logo:hover {
-  transform: scale(1.2); /* Changed 'scale' to 'scale(1.2)' */
+  transform: scale(1.2); 
+  background-color: rgba(247, 247, 247, 0.958); /* Added a background color on hover */
 }
+
 .right-align {
   display: flex;
   justify-content: flex-end;
@@ -83,13 +91,14 @@ header {
 
 #green:hover {
   transform: scale(1.2); /* Changed 'scale' to 'scale(1.2)' */
+  background-color: rgba(158, 13, 13, 0.922); /* Added a background color on hover */
 }
 
 #trip-section,
 #total-spent {
   margin: 2em;
   padding: 2em;
-  border: 1px solid white;
+  border: 1px solid rgb(190, 230, 13);
   border-radius: 10px;
   transition: background-color 0.3s ease; /* Changed 'all' to 'background-color' */
 }
