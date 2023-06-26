@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack Starter Kit</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Travel Tracker - Plan and Manage Your Trips</title>
+  </head>  
 <body>
-  <img src="./images/turing-logo.png" alt="turing logo">
-  
+  <header>
+    <div class="header-content">
+      <img src="./images/turing-logo.png" alt="Turing School Logo" id="logo">
+      <h1 class="title">Travel Tracker</h1>
+    </div>
+  </header>  
+ 
+  <!-- Login Section -->
+  <section id="login-section" aria-labelledby="login-heading">
+    <h2 id="login-heading">Login</h2>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required aria-required="true">
+      <label for="password">Password:</label>
+      <input type="password" id="password" required aria-required="true">
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Traveler Dashboard -->
+  <section id="traveler-dashboard" class="dashboard hidden" aria-labelledby="traveler-dashboard-heading" aria-hidden="true">
+    <h2 id="traveler-dashboard-heading"><span class="space-right">Traveler</span> Dashboard</h2>
+
+    <!-- <h2 id="traveler-dashboard-heading">Traveler Dashboard</h2> -->
+    <form id="search-user-form" role="search">
+      <label for="search-user">Search User:</label>
+      <input type="text" id="search-user" required aria-required="true">
+      <button type="submit">Search</button>
+    </form>
+    <div id="trips-container" role="region" aria-live="polite">
+      <!-- Trips will be dynamically added here -->
+    </div>
+    <div id="total-amount-spent" role="region" aria-live="polite"></div>
+    <div id="trip-request-form-container" role="form">
+      <!-- Trip request form will go here -->
+    </div>
+  </section>
+  <!-- Travel Agent Dashboard -->
+
+  <section id="agent-dashboard" class="dashboard hidden" aria-labelledby="agent-dashboard-heading" aria-hidden="true">
+    <h2 id="agent-dashboard-heading"><span class="space-right">Travel</span> <span class="space-right">Agent</span> Dashboard</h2>
+    <form id="search-user-form" role="search">
+      <label for="search-user">Search User:</label>
+      <input type="text" id="search-user" required aria-required="true">
+      <button type="submit">Search</button>
+    </form>
+    <div id="new-trip-requests-container" role="region" aria-live="polite">
+      <!-- New trip requests will be dynamically added here -->
+    </div>
+    <div id="total-income-generated" role="region" aria-live="polite"></div>
+    <div class="right-align">
+    <img src="./images/parvin-going-home.jpg" alt="Traveling Girl" id="green">
+    </div>
+    <div id="travelers-today" role="region" aria-live="polite"></div>
+    <div id="search-user-container" role="form">
+      <!-- Search form will go here -->
+    </div>
+  </section>
   <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
   <script src="bundle.js"></script>
-
 </body>
-</html>
+</html> 
+
