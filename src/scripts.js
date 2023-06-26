@@ -6,6 +6,28 @@ import { displayPendingTrips } from './domUpdates.js';
 
 console.log('This is the JavaScript entry file - your code begins here.');
 
+
+// window.onload = function() {
+  document.getElementById('logo').addEventListener('mouseover', sparkle);
+  // document.getElementById('green').addEventListener('mouseover', sparkle);
+// }
+
+function sparkle(event) {
+  var sparkle = document.createElement('div');
+  sparkle.className = 'sparkle';
+  sparkle.style.top = `${event.clientY - 30}px`;  // subtracting 10 to center the sparkle
+  sparkle.style.left = `${event.clientX - 30}px`;  // subtracting 10 to center the sparkle
+  document.body.appendChild(sparkle);
+  
+  // After a short delay, remove the sparkle element and make it fade out.
+  setTimeout(() => {
+    sparkle.style.opacity = '9';
+  }, 500);
+  setTimeout(() => {
+    document.body.removeChild(sparkle);
+  }, 1000);
+}
+
 document.getElementById('search-user-form').addEventListener('submit', function(event) {
   event.preventDefault(); // prevent the form from submitting normally
 
@@ -105,3 +127,6 @@ function updatePendingTrips() {
       console.log('Error fetching pending trips:', error);
     });
 }
+
+
+
