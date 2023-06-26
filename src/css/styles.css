@@ -1,7 +1,42 @@
 body {
   background: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;  /* This line changes the font of all text on the page to Raleway */
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 1px; /* Adjust the letter spacing if you need */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.header-content h1 {
+  font-style: italic;
+  margin-left: 10px;
+  font-size: 22px;
+}
+h2 {
+  font-weight: normal;
+}
+
+#login-section,
+#traveler-dashboard,
+#agent-dashboard {
+  margin: auto; /* This centers the elements */
+  width: 75%; /* This moves them away from the left edge */
+  font-family: 'Raleway', sans-serif; /* This changes the font to Raleway */
+  font-size:14px;
+  padding: 10px;  /* Adjust this value to your needs */
+}
+
+.space-right {
+  margin-right: 5px;  /* This will add 10px of space after the word "Traveler". Adjust as needed. */
 }
 
 header {
@@ -36,7 +71,7 @@ header {
   margin: 20px;
   position:absolute;
   top: 100px;
-  right: 20px; 
+  right: 90px; 
   margin-top:auto;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);

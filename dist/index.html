@@ -1,33 +1,20 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack Starter Kit</title>
-</head>
-<body>
-  <img src="./images/turing-logo.png" alt="turing logo"> -->
-  
-  <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
-  <!-- <script src="bundle.js"></script>
-
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Tracker - Plan and Manage Your Trips</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Travel Tracker - Plan and Manage Your Trips</title>
+  </head>  
 <body>
-  <img src="./images/turing-logo.png" alt="Turing School Logo" id="logo">
   <header>
-    <h1>Travel Tracker</h1>
-  </header>
-
+    <div class="header-content">
+      <img src="./images/turing-logo.png" alt="Turing School Logo" id="logo">
+      <h1 class="title">Travel Tracker</h1>
+    </div>
+  </header>  
+ 
   <!-- Login Section -->
   <section id="login-section" aria-labelledby="login-heading">
     <h2 id="login-heading">Login</h2>
@@ -42,7 +29,9 @@
 
   <!-- Traveler Dashboard -->
   <section id="traveler-dashboard" class="dashboard hidden" aria-labelledby="traveler-dashboard-heading" aria-hidden="true">
-    <h2 id="traveler-dashboard-heading">Traveler Dashboard</h2>
+    <h2 id="traveler-dashboard-heading"><span class="space-right">Traveler</span> Dashboard</h2>
+
+    <!-- <h2 id="traveler-dashboard-heading">Traveler Dashboard</h2> -->
     <form id="search-user-form" role="search">
       <label for="search-user">Search User:</label>
       <input type="text" id="search-user" required aria-required="true">
@@ -57,8 +46,9 @@
     </div>
   </section>
   <!-- Travel Agent Dashboard -->
+
   <section id="agent-dashboard" class="dashboard hidden" aria-labelledby="agent-dashboard-heading" aria-hidden="true">
-    <h2 id="agent-dashboard-heading">Travel Agent Dashboard</h2>
+    <h2 id="agent-dashboard-heading"><span class="space-right">Travel</span> <span class="space-right">Agent</span> Dashboard</h2>
     <form id="search-user-form" role="search">
       <label for="search-user">Search User:</label>
       <input type="text" id="search-user" required aria-required="true">
