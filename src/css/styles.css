@@ -4,6 +4,57 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+  font-weight: normal;
+  transition: transform 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.2);
+}
+
+header {
+  text-align: center;
+}
+
+.space-right {
+  margin-right: 5px;
+}
+
+/* skip to the main content of the page */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s ease;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+
+/* HEADER CONTENT */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.header-content h1 {
+  font-style: italic;
+  margin-left: 29px;
+  font-size: 38px;
+  margin-bottom: 4px;
+}
+
+/* TITLE */
 .title {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 1px; 
@@ -14,15 +65,7 @@ body {
   transform: scale(2.5) translateX(10px); 
 }
 
-
-h2 {
-  transition: transform 0.3s ease;
-}
-
-h2:hover {
-  transform: scale(1.2);
-}
-
+/* MAGNIFY ON HOVER */
 .magnify-on-hover {
   transition: transform 0.3s ease;
 }
@@ -31,22 +74,61 @@ h2:hover {
   transform: scale(1.2);
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 10px;
+/* LOGIN FORM */
+
+#login-heading:hover {
+  visibility: hidden;
 }
 
-.header-content h1 {
-  font-style: italic;
-  margin-left: 10px;
-  font-size: 22px;
-}
-h2 {
-  font-weight: normal;
+#login-heading::after {
+  content: "Greetings, please feel free to proceed."; 
+  color: white;
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+ left: 10px; 
+  visibility: hidden; 
 }
 
+#login-heading:hover::after {
+  opacity: 1; 
+  visibility: visible; 
+}
+
+#login-form input {
+  display: block; 
+  width: 20%;
+  padding: 5px; 
+  margin-bottom: 20px;
+}
+
+#login-form label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#login-form button {
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 60%;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  background-color: #C0C0C0;
+}
+
+#login-form button:hover {
+  transform: scale(1.2); 
+  background-color: #39FF14;
+}
+
+
+/* DASHBOARD */
 #login-section,
 #traveler-dashboard,
 #agent-dashboard {
@@ -54,22 +136,15 @@ h2 {
   width: 75%; 
   font-family: 'Raleway', sans-serif; 
   font-size:24px;
-  padding: 10px; 
+  padding: 200px; 
 }
 
-.space-right {
-  margin-right: 5px;
-}
-
-header {
-  text-align: center;
-}
-
+/* LOGO */
 #logo {
   width: 60px;
   height: 60px;
   margin: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
   border-radius: 50%;
@@ -84,11 +159,11 @@ header {
   background-color: #C0C0C0;
 }
 
+/* SPARKLE */
 .sparkle {
   position: absolute;
   width: 50px;
   height: 50px;
-  /* background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(0,0,255,0.6) 70%, rgba(0,0,255,0) 100%); */
   background: radial-gradient(circle, #c0c0c0 0%, rgba(0,0,255,0.6) 70%, rgba(12, 234, 34, 0) 100%);
   border-radius: 50%;
   pointer-events: none;
@@ -97,30 +172,20 @@ header {
   transition: opacity 0.5s ease-out;
 }
 
-/* .sparkle {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(circle, #c0c0c0 0%, rgba(0,0,255,0.6) 70%, rgba(12, 234, 34, 0) 100%), url('./parvin-going-home.jpg');
-  background-size: cover;
-  pointer-events: none;
-  mix-blend-mode: screen;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-} */
-
+/* RIGHT ALIGN */
 .right-align {
   display: flex;
   justify-content: flex-end;
 }
 
+/* GREEN */
 #green {
   width: 800px;
   height: 800px;
   margin: 80px;
   position:absolute;
   top: 100px;
-  right: 140px; 
+  right: 180px; 
   margin-top:auto;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
@@ -131,9 +196,10 @@ header {
 
 #green:hover {
   transform: scale(1.2);
-  background-color: #39FF14
+  background-color: #39FF14;
 }
 
+/* TRIP SECTION AND TOTAL SPENT */
 #trip-section,
 #total-spent {
   margin: 2em;
@@ -148,3 +214,53 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 1024px) {
+  #green {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #green {
+    width: 400px;
+    height: 400px;
+  }
+  
+  #login-section,
+  #traveler-dashboard,
+  #agent-dashboard {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #green {
+    width: 200px;
+    height: 200px;
+  }
+  
+  #login-section,
+  #traveler-dashboard,
+  #agent-dashboard {
+    width: 100%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content h1 {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  #logo {
+    margin: 10px auto;
+    width: 30px;
+    height: 30px;
+  }
+}
