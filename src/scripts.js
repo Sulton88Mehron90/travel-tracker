@@ -54,7 +54,7 @@ Promise.all([fetchTravelers(), fetchTrips(), fetchDestinations()])
     destinations = destinationsData.destinations;
 
     console.log("In THEN of PromiseAll:", destinations);
-    updateDOM()
+   
   })
   .catch(error => {
     console.error('There was a problem with the fetch', error);
@@ -79,6 +79,7 @@ function sparkle(event) {
   }, 1000);
 }
 
+
 const getTravelerInfo = (userID) => {
 
   console.log("getTravelerInfo", userID)
@@ -87,57 +88,50 @@ const getTravelerInfo = (userID) => {
 
 };
 
+//login
+
 loginForm.addEventListener('submit', checkUserLogin);
 
 function checkUserLogin(event) {
   event.preventDefault();
   const id = +usernameInput.value.match(/\d+/g);
-  const string = passwordInput.value.slice(0, 8);
-
-  console.log('ID:', id);
-  console.log('String:', string);
-  console.log('Travelers Data:', travelers);
-
-  if (travelers && travelers.length > 0) {
+  const string = usernameInput.value.slice(0, 8);
   if (
     string === "traveler" &&
     Number(id) > 0 &&
     Number(id) <= 50 &&
-    password.value === "travel"
+    passwordInput.value === "travel"
   ) {
-    
-    newUser = getTravelerInfo(Number(id));
+    newUser = getTravelerInfo(Number(id)); 
 
     console.log('New User:', newUser);
     console.log('New User:', Number(id));
+
 
     loginSection.classList.add("hidden");
     homePage.classList.remove('hidden');
     updateDOM();
   }
-}else {
-  console.log('Travelers data is not available yet. Please wait for the data to be fetched.');
-  }
 };
+
 
 function displayCalendar() {
   calendar.innerHTML = `<input id="dateInput" type="date" min="${currentDate.split('/').join('-')}" name="calendar" placeholder="yyyy/mm/dd" required>`;
 };
 
-// function displayWelcomeMessage() {
-//   headerWelcome.innerText = `Welcome, ${newUser.name}`;
-// };
-
 function displayWelcomeMessage() {
-  if (newUser && newUser.name) {
-    headerWelcome.innerText = `Welcome, ${newUser.name}`;
-  } else {
-    headerWelcome.innerText = "Welcome!";
-  }
+  headerWelcome.innerText = `Welcome, ${newUser.name}`;
+};
 
-  
+// function displayWelcomeMessage() {
+//   if (newUser && newUser.name) {
+//     headerWelcome.innerText = `Welcome, ${newUser.name}`;
+//   } else {
+//     headerWelcome.innerText = "Welcome!";
+//   }
+// }
 
-}
+
 function updateDOM() {
   displayCalendar();
   // showPastTrips();
