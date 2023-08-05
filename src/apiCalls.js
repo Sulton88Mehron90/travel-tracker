@@ -28,4 +28,5 @@ function fetchDestinations() {
   return fetchData('destinations');
 };
 
+
 export { fetchTravelers, fetchTrips, fetchDestinations };
