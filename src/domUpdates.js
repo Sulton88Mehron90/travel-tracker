@@ -40,7 +40,7 @@ function displayCalendar() {
 };
 
 function displayWelcomeMessage(newUser) {
-    headerWelcome.innerText = `Welcome, ${newUser.name}`;
+    headerWelcome.innerText = `Welcome, ${newUser.name}!`;
     console.log('displayWelcomeMessage:', pastTrips); //consoles
 };
 
@@ -55,10 +55,10 @@ function displayDestinationsList() {
 function showPastTrips(userId) {
   console.log('showPastTrips function has been called'); 
   let pastTrips = getPastTrips(userId);
-  console.log('Past Trips:', pastTrips);//consoles
+  console.log('Past Trips:', pastTrips); //consoles
   console.log(pastTripsList);
-  
-  // pastTripsList.innerHTML = '';
+
+  pastTripsList.innerHTML = '';
 
   pastTrips.forEach(trip => {
       const destinationInfo = getDestinationInfo(trip.destinationID);
@@ -73,8 +73,6 @@ function showUpcomingTrips(userId) {
   let upcomingTrips = getUpcomingTrips(userId);
 
   console.log('Upcoming Trips:', upcomingTrips);
-
-  pastTripsList.innerHTML = '';
 
   upcomingTrips.forEach(trip => {
       const destinationInfo = getDestinationInfo(trip.destinationID);
@@ -95,7 +93,7 @@ function showTotalSpent(userId) {
   }, 0));
   let dollarUSLocale = Intl.NumberFormat('en-US');
   let totalPrice = dollarUSLocale.format(totalCost);
-  totalSpent.innerText = `Total amount spent on trips: $${totalPrice}`;
+  totalSpent.innerHTML = `Total amount spent on trips: <strong> $${totalPrice} </strong>`;
 };
 
 
