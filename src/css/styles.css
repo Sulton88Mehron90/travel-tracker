@@ -22,6 +22,7 @@ header {
 }
 
 /* skip to the main content of the page */
+
 .skip-link {
   position: absolute;
   top: -40px;
@@ -38,8 +39,8 @@ header {
   top: 0;
 }
 
-
 /* HEADER CONTENT */
+
 .header-content {
   display: flex;
   align-items: center;
@@ -55,6 +56,7 @@ header {
 }
 
 /* TITLE */
+
 .title {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 1px; 
@@ -62,10 +64,11 @@ header {
 }
 
 .title:hover {
-  transform: scale(2.5) translateX(10px); 
+  transform: scale(2.5) translateX(5px) translateY(4px);
 }
 
 /* MAGNIFY ON HOVER */
+
 .magnify-on-hover {
   transition: transform 0.3s ease;
 }
@@ -74,75 +77,10 @@ header {
   transform: scale(1.2);
 }
 
-/* LOGIN FORM */
-
-#login-heading:hover {
-  visibility: hidden;
-}
-
-#login-heading::after {
-  content: "Greetings, please feel free to proceed."; 
-  color: white;
-  font-size: 50px;
-  font-family: 'Great Vibes', cursive;
-  opacity: 0; 
-  transition: opacity 0.3s ease;
-  position: absolute;
-  bottom: 20px;
- left: 10px; 
-  visibility: hidden; 
-}
-
-#login-heading:hover::after {
-  opacity: 1; 
-  visibility: visible; 
-}
-
-#login-form input {
-  display: block; 
-  width: 20%;
-  padding: 5px; 
-  margin-bottom: 20px;
-}
-
-#login-form label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-#login-form button {
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer;
-  border: 3px solid rgb(11, 166, 52);
-  border-radius: 60%;
-  display: inline-block;
-  transition: transform 0.3s ease;
-  transform: scale(1);
-  background-color: #C0C0C0;
-}
-
-#login-form button:hover {
-  transform: scale(1.2); 
-  background-color: #39FF14;
-}
-
-
-/* DASHBOARD */
-#login-section,
-#traveler-dashboard,
-#agent-dashboard {
-  margin: auto;
-  width: 75%; 
-  font-family: 'Raleway', sans-serif; 
-  font-size:24px;
-  padding: 200px; 
-}
-
 /* LOGO */
 #logo {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin: 30px;
   margin-top: 50px;
   cursor: pointer;
@@ -178,6 +116,75 @@ header {
   justify-content: flex-end;
 }
 
+/* LOGIN FORM */
+
+#login-heading {
+  margin-bottom: 20px;
+}
+
+#login-heading:hover {
+  visibility: hidden;
+}
+
+#login-heading::after {
+  content: "Greetings, please feel free to proceed."; 
+  color: white;
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 10px; 
+  visibility: hidden; 
+}
+
+#login-heading:hover::after {
+  opacity: 1; 
+  visibility: visible; 
+}
+
+#login-form input {
+  display: block; 
+  width: 20%;
+  padding: 5px; 
+  margin-bottom: 20px;
+}
+
+#login-form label {
+  margin-bottom: 10px;
+  display: block;
+  margin-right: 10px;
+}
+
+#login-form button {
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 60%;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  background-color: #C0C0C0;
+}
+
+#login-form button:hover {
+  transform: scale(1.2); 
+  background-color: #39FF14;
+}
+
+/* DASHBOARD */
+#login-section,
+/* #agent-dashboard */
+#traveler-dashboard {
+  margin: auto;
+  width: 75%; 
+  font-family: 'Raleway', sans-serif; 
+  font-size:24px;
+  padding: 200px; 
+}
+
 /* GREEN */
 #green {
   width: 800px;
@@ -199,12 +206,56 @@ header {
   background-color: #39FF14;
 }
 
+/* .image-container {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+} */
+
+#airplane {
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  margin-top: 0px;
+  margin-top: 150px;
+}
+
+#airplane:hover {
+  transform: scale(1.2);
+  background-color: #39FF14;
+}
+
+#in-a-hurry {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  margin-top: 0px;
+}
+
+#in-a-hurry:hover {
+  transform: scale(1.2);
+  background-color: #39FF14;
+}
+
+
 /* TRIP SECTION AND TOTAL SPENT */
 #trip-section,
 #total-spent {
   margin: 2em;
   padding: 2em;
-  border: 1px solid rgb(190, 230, 13);
+  border: 1px solid rgb(8, 9, 0);
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
@@ -214,16 +265,267 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Home Page */
+.logo{
+  height: 120px;
+  width: 200px;
+  margin-right: 50px; 
+}
+
+.home-page{
+  height: 100%;
+}
+
+.header-welcome {
+  /* background-color: rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%; */
+  background-color: rgb(242, 243, 243) 0%, rgb(243, 246, 244) 100%;
+  font-size: 2.5em;
+  width: 20%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+
+.main-section {
+  display: flex;
+  justify-content: space-evenly;
+  height: 85%;
+  align-items: center;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  display: none;
+}
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Styling for Widgets */
+
+/* .widget {
+  width: 40%;
+  height: 70%;
+  margin: 1% 1% 0% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 25px;
+  overflow: scroll;
+}
+
+.widgetTitles {
+  background-color: #ffffff;
+  font-size: xx-large;
+  margin-bottom: 5%;
+} */
+
+.widget {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #08ab44;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widgetTitles {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+
+.trips-list {
+  margin-top: 10px;
+}
+
+/* Form Styles */
+#form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* form {
+  font-size: x-large;
+}
+
+input,
+select {
+  width: 60%;
+  margin: 2% 20%;
+  height: 30px;
+  font-size: .75em;
+} */
+
+#destinationDropdown,
+#calendar,
+#durationInput,
+#numTravelersInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#estimatedCost {
+  text-align: center;
+}
+
+#submitTrip {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#submitTrip:hover {
+  background-color: #0056b3;
+}
+
+/* Image Styles */
+
+#in-a-hurry {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+}
+
+#airplane {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+/* #airplane,
+#in-a-hurry {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: 3px solid rgb(11, 166, 52);
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  margin: 10px;
+} */
+
+#airplane:hover,
+#in-a-hurry:hover {
+  transform: scale(1.2);
+  background-color: #39FF14;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
+
+  .right-align {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #airplane,
+  #in-a-hurry {
+    margin: 10px auto;
+  }
+
+  .widget,
+  #form {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for even smaller screens */
+
+  #form label {
+    font-size: 14px;
+  }
+
+  #destinationDropdown,
+  #calendar,
+  #durationInput,
+  #numTravelersInput {
+    font-size: 14px;
+  }
+
+  #submitTrip {
+    font-size: 16px;
+  }
+}
+
 /* RESPONSIVE CSS */
 @media only screen and (max-width: 1024px) {
-  #green {
+  #green, #airplane, #in-a-hurry {
     width: 600px;
     height: 600px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #green {
+  #green, #airplane, #in-a-hurry {
     width: 400px;
     height: 400px;
   }
@@ -236,7 +538,7 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
-  #green {
+  #green, #airplane, #in-a-hurry {
     width: 200px;
     height: 200px;
   }
