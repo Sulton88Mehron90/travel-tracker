@@ -4,7 +4,7 @@ import './images/turing-logo.png';
 import './images/parvin-going-home.jpg';
 import './images/taking-picture.png';
 import './images/in-a-hurry.png';
-
+import dayjs from 'dayjs';
 import { fetchTravelers, fetchTrips, fetchDestinations } from './apiCalls';
 import {
   loginForm,
@@ -56,6 +56,20 @@ window.addEventListener('load', function () {
     });
 });
 
+/* ~~~~~~~~~~ Day.js~Displaying the Date on Your Website~~~~~~~~~~*/
+const now = dayjs();
+const formattedDate = now.format('dddd, MMMM D YYYY, h:mm A');
+document.getElementById('dateElement').innerText = formattedDate;
+
+function updateDateTime() {
+  const now = dayjs();
+  const formattedDate = now.format('dddd, MMMM D YYYY, h:mm A');
+  document.getElementById('dateElement').innerText = formattedDate;
+};
+
+setInterval(updateDateTime, 60000);
+updateDateTime();
+
 // Sparkle function
 document.getElementById('logo').addEventListener('mouseover', sparkle);
 
@@ -91,18 +105,18 @@ return trips.filter(trip => trip.userID === userID && trip.status === 'pending')
 };
 
 const getDestinationInfo = (destinationID) => {
-  console.log('getDestinationInfo called with destinations and :', destinations, destinationID );//consoles
+  console.log('getDestinationInfo called with destinationID:', destinationID );//consoles
   const destination = destinations.find(destination => destination.id === destinationID);
   console.log('getDestinationInfo returned: ', destination);  //consoles
   return destination;
 };
 
-const getCostOfDestination = (destinations, destinationID, numTravelers, duration) => {
+const getCostOfDestination = (destinationID, numTravelers, duration) => {
   console.log('Type of numTravelers:', typeof numTravelers); //consoles
   console.log('Type of duration:', typeof duration); //consoles
-  // console.log('getCostOfDestination called with :', destinations, destinationID, numTravelers, duration);//consoles
+  console.log('getCostOfDestination called with numTravelers:', numTravelers);//consoles
   const destination = getDestinationInfo(destinationID);
-  console.log('Destination info for calculation: ', destination); // consoles
+  console.log('Destination info for calculationdestination: ', destination); // consoles
   const lodgingCost = destination.estimatedLodgingCostPerDay * duration;
   const flightCost = destination.estimatedFlightCostPerPerson * numTravelers;
   const agentFee = (lodgingCost + flightCost) * 0.1;
