@@ -25,63 +25,55 @@
         <label for="password">Password:</label>
         <input type="password" id="passwordInput" placeholder="password" required aria-required="true">
         <button type="submit">Login</button>
-        <!-- <input id="login" type="submit" value="Login"> -->
       </form>
       <div class="right-align">
         <img src="./images/parvin-going-home.jpg" alt="Traveling Girl" id="green">
       </div>
-    </main>
     </section>
+
     <section id="homePage" class="home-page hidden">
       <header id="header" class="website-header">
-        <!-- <div class="right-align">
-          <img src="./images/taking-picture.png" alt="Girl tina hurry" id="in-a-hurry">
-          <img src="./images/in-a-hurry.png" alt="Girl taking a picture" id="airplane">  
-        </div> -->
         <h1 id="headerWelcome" class="header-welcome"></h1>
+      </header>  
+      <div class="right-align">
+        <img src="./images/taking-picture.png" alt="Girl tina hurry" id="airplane">
+      </div>
 
-      </header>	
-         <div class="right-align">
-          <img src="./images/taking-picture.png" alt="Girl tina hurry" id="airplane">
+      <section id="pastTrips" class="widget">
+        <h1 class="widgetTitles">Past Trips</h1>
+        <h2 id="totalSpent"></h2>
+        <div>
+          <h2>List of Past Trips:</h2>
+          <section id="pastTripsList" class="trips-list"></section>
         </div>
-      <main id="main" class="main-section">
-        <section id="pastTrips" class="widget">
-          <h1 class="widgetTitles">Past Trips</h1>
-          <h2 id="totalSpent"></h2>
-          <div>
-            <h2>List of Past Trips:</h2>
-            <section id="pastTripsList" class="trips-list"></section>
-          </div>
-        </section>
+      </section>
 
-        <form id="form" class="widget">
-          <h1 class="widgetTitles">Book a Trip!</h1>
-          <label for="destinationDropdown">Choose a Destination!</label>
-          <select name="destinations" id="destinationDropdown"></select>
-          <label for="calendar">Date:</label>
-          <div id="calendar"></div>
-          <label for="durationInput">Duration of Trip:</label>
-          <input type="number" id="durationInput" placeholder="Number of days Ex: 11" min="1" required>
-          <label for="numTravelersInput">Number of Travelers:</label>
-          <input type="number" id="numTravelersInput" placeholder="Number of Travelers Ex: 2" min="1" required>
-          <p id="estimatedCost">The estimated cost of this trip is... _____ </p>
-          <input id="submitTrip" type="submit" value="Submit Booking for Review">
-        </form>
-        <!-- <div class="right-align">
-          <img src="./images/taking-picture.png" alt="Girl tina hurry" id="airplane">
+      <form id="form" class="widget">
+        <h1 class="widgetTitles">Book a Trip!</h1>
+        <label for="destinationDropdown">Choose a Destination!</label>
+        <select name="destinations" id="destinationDropdown"></select>
+        <label for="calendar">Date:</label>
+        <div id="calendar"></div>
+        <label for="durationInput">Duration of Trip:</label>
+        <input type="number" id="durationInput" placeholder="Number of days Ex: 11" min="1" required>
+        <label for="numTravelersInput">Number of Travelers:</label>
+        <input type="number" id="numTravelersInput" placeholder="Number of Travelers Ex: 2" min="1" required>
+        <p id="estimatedCost">The estimated cost of this trip is... _____ </p>
+        <input id="submitTrip" type="submit" value="Submit Booking for Review">
+      </form>
+
+      <section id="upcomingTrips" class="widget">
+        <h1 class="widgetTitles">Upcoming Trips</h1>
+        <div class="right-align">
           <img src="./images/in-a-hurry.png" alt="Girl taking a picture" id="in-a-hurry">  
-        </div> -->
-
-        <section id="upcomingTrips" class="widget">
-          <h1 class="widgetTitles">Upcoming Trips</h1>
-          <div class="right-align">
-            <img src="./images/in-a-hurry.png" alt="Girl taking a picture" id="in-a-hurry">  
-          </div>
-          <div>
-            <h2>List of Upcoming Trips</h2>
-            <section id="upcomingTripsList" class="trips-list"></section>
-          </div>
-        </section>
+        </div>
+        <div>
+          <h2>List of Upcoming Trips</h2>
+          <section id="upcomingTripsList" class="trips-list"></section>
+        </div>
+      </section>
+    </section> 
+  </main> 
   <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
   <script src="bundle.js"></script>
 </body>

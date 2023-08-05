@@ -53,10 +53,12 @@ function displayDestinationsList() {
 };
 
 function showPastTrips(userId) {
+  console.log('showPastTrips function has been called'); 
   let pastTrips = getPastTrips(userId);
   console.log('Past Trips:', pastTrips);//consoles
-
-  pastTripsList.innerHTML = '';
+  console.log(pastTripsList);
+  
+  // pastTripsList.innerHTML = '';
 
   pastTrips.forEach(trip => {
       const destinationInfo = getDestinationInfo(trip.destinationID);
