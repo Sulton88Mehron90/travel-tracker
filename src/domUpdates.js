@@ -1,7 +1,5 @@
 import {
   currentDate,
-  travelers,
-  trips,
   destinations,
   newUser,
   getTravelerInfo,
@@ -11,9 +9,7 @@ import {
   getCostOfDestination,
   checkUserLogin,
   showUpdatedUpcomingTrips
-
 } from './scripts';
-
 
 /* ~~~~~~~~~~ QUERY SELECTORS ~~~~~~~~~~*/
 
@@ -95,7 +91,6 @@ function showTotalSpent(userId) {
   let totalPrice = dollarUSLocale.format(totalCost);
   totalSpent.innerHTML = `Total amount spent on trips: <strong> $${totalPrice} </strong>`;
 };
-
 
 /* ~~~~~~~~~~ EXPORTS ~~~~~~~~~~*/
 
