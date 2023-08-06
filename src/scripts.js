@@ -133,7 +133,11 @@ loginForm.addEventListener('submit', checkUserLogin);
 function checkUserLogin(event) {
   event.preventDefault();
   const id = +usernameInput.value.match(/\d+/g);
-  const string = usernameInput.value.slice(0, 8);
+  console.log('usernameInput:', id); //consoles
+  const string = usernameInput.value.slice(0, 8); 
+  //8 is the number of letters in the word traveler
+  console.log('usernameInput:', string); //consoles
+
   if (
     string === "traveler" &&
     Number(id) > 0 &&
@@ -165,17 +169,31 @@ function updateDOM() {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+  //comes from trips - 
+  // {
+// "id": 1,
+// "userID": 44,
+// "destinationID": 49,
+// "travelers": 1,
+// "date": "2022/09/16",
+// "duration": 8,
+// "status": "approved",
+// "suggestedActivities": []
+// },
   
   const data = {
     "id": parseInt(trips.length + 1),
     "userID": newUser.id,
     "destinationID": parseInt(destinationDropdown.value),
     "travelers": parseInt(numTravelersInput.value),
-    "date": calendar.firstChild.value.split('-').join('/'),
+    "date": calendar.firstChild.value.split('-').join('/'), //2023/12/08
     "duration": parseInt(durationInput.value),
     "status": "pending",
     "suggestedActivities": []
   };
+
+  console.log('Calendar', data.date)
+  console.log(calendar.firstChild.value) // shows befor split. 2023-12-08
 
   fetch('http://localhost:3001/api/v1/trips', {
     method: 'POST',

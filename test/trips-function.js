@@ -7,8 +7,8 @@ const tripsData = [{
     "duration": 8,
     "status": "approved",
     "suggestedActivities": []
-    },
-    {
+},
+{
     "id": 2,
     "userID": 35,
     "destinationID": 25,
@@ -17,8 +17,8 @@ const tripsData = [{
     "duration": 18,
     "status": "approved",
     "suggestedActivities": []
-    },
-    {
+},
+{
     "id": 3,
     "userID": 3,
     "destinationID": 22,
@@ -27,8 +27,8 @@ const tripsData = [{
     "duration": 17,
     "status": "approved",
     "suggestedActivities": []
-    },
-    {
+},
+{
     "id": 4,
     "userID": 43,
     "destinationID": 14,
@@ -37,8 +37,8 @@ const tripsData = [{
     "duration": 10,
     "status": "approved",
     "suggestedActivities": []
-    },
-    {
+},
+{
     "id": 46,
     "userID": 44,
     "destinationID": 33,
@@ -47,8 +47,8 @@ const tripsData = [{
     "duration": 11,
     "status": "approved",
     "suggestedActivities": []
-    },
-    {
+},
+{
     "id": 71,
     "userID": 38,
     "destinationID": 28,
@@ -57,6 +57,21 @@ const tripsData = [{
     "duration": 11,
     "status": "pending",
     "suggestedActivities": []
-    }]
+}];
 
-    export default tripsData
+
+const getPastTrips = (userID) => {
+    console.log('getPastTrips called with userID:', userID); //consoles
+    if (typeof userID !== 'number') {
+        throw new Error('Invalid userID. It should be a numeric value.');
+    }
+
+    return tripsData.filter(trip => trip.userID === userID && trip.status === 'approved');
+};
+
+const getUpcomingTrips = (userID) => {
+    console.log('getUpcomingTrips called with userID:', userID);//consoles
+    return tripsData.filter(trip => trip.userID === userID && trip.status === 'pending');
+};
+
+export { getPastTrips, getUpcomingTrips, tripsData };
