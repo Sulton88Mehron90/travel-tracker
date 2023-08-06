@@ -13,9 +13,6 @@ import {
   usernameInput,
   passwordInput,
   calendar,
-  headerWelcome,
-  pastTripsList,
-  totalSpent,
   estimatedCost ,
   numTravelersInput,
   upcomingTripsList,
@@ -27,7 +24,6 @@ import {
   showPastTrips,
   showUpcomingTrips,
   showTotalSpent
-
 } from './domUpdates';
 
 /* ~~~~~~~~~~ DATA MODEL ~~~~~~~~~~*/
@@ -56,7 +52,7 @@ window.addEventListener('load', function () {
     });
 });
 
-/* ~~~~~~~~~~ Day.js~Displaying the Date on Your Website~~~~~~~~~~*/
+/* ~~~~~~~~~~ Day.js. Displaying the Date on Your Website ~~~~~~~~~~*/
 const now = dayjs();
 const formattedDate = now.format('dddd, MMMM D YYYY, h:mm A');
 document.getElementById('dateElement').innerText = formattedDate;
@@ -70,7 +66,7 @@ function updateDateTime() {
 setInterval(updateDateTime, 60000);
 updateDateTime();
 
-// Sparkle function
+/* ~~~~~~~~~~ Sparkle function ~~~~~~~~~~*/
 document.getElementById('logo').addEventListener('mouseover', sparkle);
 
 function sparkle(event) {
@@ -126,7 +122,7 @@ const getCostOfDestination = (destinationID, numTravelers, duration) => {
   return lodgingCost + flightCost + agentFee;
 }
 
-// Login form submit event
+/* ~~~~~~~~~~ Login form submit event  ~~~~~~~~~~*/
 
 loginForm.addEventListener('submit', checkUserLogin);
 
@@ -169,8 +165,9 @@ function updateDOM() {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  //comes from trips - 
-  // {
+  
+//comes from trips - 
+// {
 // "id": 1,
 // "userID": 44,
 // "destinationID": 49,
