@@ -4,17 +4,28 @@
 This web application was designed to provide a user-friendly dashboard displaying comprehensive information about a user's past and upcoming trips. Upon logging in with their credentials, users are directed to their homepage where they can easily view their travel history and schedule new adventures. I integrated the application with a local server, enabling it to make network requests to various API endpoints for data retrieval and manipulation. Furthermore, users can seamlessly post to the trips endpoint of the API, instantly reflecting their newly booked trips on the user interface.
 
 ## Setup
-Fork and clone this [repo](https://github.com/sarahcatherine311/travel-tracker) and then in a different folder, fork and clone this [local server repo](https://github.com/turingschool-examples/travel-tracker-api).
+1. Fork and Clone the Main Repo [repo](https://github.com/sarahcatherine311/travel-tracker):
 
-Do the following steps for both repos. Both repos need to be running in order for the app to work correctly.
+Go to the main repository on GitHub.
+Click on the "Fork" button at the top right to create a copy of the repository in your own GitHub account.
+Once forked, click on the "Code" button and copy the SSH link.
+Open your terminal and navigate to the directory where you want to clone the repository.
+Run the following command: ```git clone [copied SSH link]```
 
-In your forked GitHub repository, click the code drop-down menu and copy the SSH key. 
-Open the terminal on your machine and navigate to the containing directory you’d like - to clone the repository folder and its contents to. On the command line, run “git clone” + the SSH key you copied earlier. A new folder will be created containing a local copy of the repository linked to the forked repository you created - enter the new directory.
+This will create a new folder on your machine with the contents of the repository.
 
-Install the library dependencies:
+2. In a different folder Fork and Clone the Local Server Repo [local server repo](https://github.com/turingschool-examples/travel-tracker-api):
 
-Run: ```npm install```
-Next: ```npm start``` in the terminal to see the HTML page
+Repeat the steps above for the local server repository.
+
+- Setting Up Dependencies:
+
+For both repositories, you need to install necessary dependencies and start the local servers.
+- Install Dependencies and Start the Server:
+  Navigate to the root directory of the cloned repo: ```cd [name of the cloned directory]```
+  Install the required libraries and dependencies: ```npm install```
+  Start the local server: ```npm start``` in the terminal to see the HTML page
+  Note: Ensure both repositories are running simultaneously for the app to function correctly.
 
 ```Control + C``` is the command to stop running the local server
 
