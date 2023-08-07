@@ -61,7 +61,6 @@ const tripsData = [{
 
 
 const getPastTrips = (userID) => {
-    console.log('getPastTrips called with userID:', userID); //consoles
     if (typeof userID !== 'number') {
         throw new Error('Invalid userID. It should be a numeric value.');
     }
@@ -70,7 +69,6 @@ const getPastTrips = (userID) => {
 };
 
 const getUpcomingTrips = (userID) => {
-    console.log('getUpcomingTrips called with userID:', userID);//consoles
     return tripsData.filter(trip => trip.userID === userID && trip.status === 'pending');
 };
 

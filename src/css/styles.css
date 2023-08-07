@@ -275,7 +275,6 @@ header {
 }
 
 .header-welcome {
-  /* font-family: 'Great Vibes', cursive; */
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   transition: transform 0.3s ease;
@@ -311,7 +310,6 @@ header {
   padding: 0;
 }
 
-/* Form Styles */
 #form {
   max-width: 400px;
   margin: 20px auto;
@@ -383,11 +381,15 @@ header {
   line-height: 1.5;
 }
 
+.trips-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 img {
   margin: 10px;
 }
 
-/* Image Styles */
 #green {
   width: 800px;
   height: 800px;

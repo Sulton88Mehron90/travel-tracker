@@ -1,6 +1,6 @@
 import chai from 'chai';
 const expect = chai.expect;
-import {getTravelerInfo} from './travelers-function';
+import { getTravelerInfo } from './travelers-function';
 
 describe('getTravelerInfo', () => {
   it('should return the correct traveler info for a given userID', () => {

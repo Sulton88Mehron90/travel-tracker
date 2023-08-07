@@ -34,7 +34,7 @@ For both repositories, you need to install necessary dependencies and start the 
 ![preview-of-app](https://media.giphy.com/) 
 
 ## Reflections: 
-I am currently in the last week of Module Two at the Turing School of Software and Design's Front End Web Development program. This program consists of four modules spanning seven months, and is focused on preparing students for a career as web developers. We work extensively with JavaScript, HTML, CSS, and the React framework. This is my second solo project, which I completed in 5 days, adhering to the project specifications and rubric detailed [here](https://frontend.turing.edu/projects/travel-tracker.html). 
+I am currently in the last week of Module Two at the Turing School of Software and Design's Front End Web Development program. This program consists of four modules spanning seven months, and is focused on preparing students for a career as web developers. We work extensively with JavaScript, HTML, CSS. This is my second solo project, which I completed in 7 days, adhering to the project specifications and rubric detailed [here](https://frontend.turing.edu/projects/travel-tracker.html). 
 
 ## Technologies Used:
 Javascript | Mocha & Chai | API | CSS | HTML
