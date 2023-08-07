@@ -45,7 +45,8 @@
           <h2 id="totalSpent"></h2>
           <div>
             <h2>List of Past Trips:</h2>
-            <section id="pastTripsList" class="trips-list"></section>
+            <!-- <section id="pastTripsList" class="trips-list"></section> -->
+            <ul id="pastTripsList" class="trips-list"></ul> <!-- Changed from <section> to <ul> -->
           </div>
         </section>
         <form id="form" class="widget">
@@ -62,16 +63,29 @@
           <input id="submitTrip" type="submit" value="Submit Booking for Review">
           <p id="xyam">The caravan of life shall always pass<br>Beware that is fresh as sweet young grass</br></p>
         </form>
-        <section id="upcomingTrips" class="widget">
-          <h1 class="widgetTitles">Upcoming Trips</h1>
+        <!-- <section id="upcomingTrips" class="widget"> -->
+          <!-- <h1 class="widgetTitles">Upcoming Trips</h1>
           <div class="right-align">
             <img src="./images/in-a-hurry.png" alt="Girl in a hurry" id="in-a-hurry">
           </div>
           <div>
             <h2>List of Upcoming Trips:</h2>
             <section id="upcomingTripsList" class="trips-list"></section>
+            <ul id="upcomingTripsList" class="trips-list"></ul> 
           </div>
-        </section>
+        </section> -->
+
+        <section id="upcomingTrips" class="widget">
+          <h1 class="widgetTitles">Upcoming Trips</h1>
+          <div class="right-align">
+              <img src="./images/in-a-hurry.png" alt="Girl in a hurry" id="in-a-hurry">
+          </div>
+          <div>
+              <h2>List of Upcoming Trips:</h2>
+              <ul id="upcomingTripsList" class="trips-list"></ul> <!-- Only one container with the id "upcomingTripsList" -->
+          </div>
+      </section>
+
       </div>
       <div id="dateElement"></div>
     </section>

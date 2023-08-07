@@ -383,11 +383,16 @@ header {
   line-height: 1.5;
 }
 
+.trips-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Image Styles */
 img {
   margin: 10px;
 }
 
-/* Image Styles */
 #green {
   width: 800px;
   height: 800px;
