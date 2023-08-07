@@ -13,7 +13,7 @@ import {
   usernameInput,
   passwordInput,
   calendar,
-  estimatedCost ,
+  estimatedCost,
   numTravelersInput,
   upcomingTripsList,
   durationInput,
@@ -40,11 +40,11 @@ window.addEventListener('load', function () {
       console.log("In PromiseAll:", travelersData);//consoles
       console.log("In PromiseAll:", tripsData); //consoles
       console.log("In PromiseAll:", destinationsData); //consoles
-    travelers = travelersData.travelers;
+      travelers = travelersData.travelers;
       console.log("travelers - In THEN of PromiseAll:", travelers); //consoles
-    trips = tripsData.trips;
+      trips = tripsData.trips;
       console.log("trips - In THEN of PromiseAll:", trips); //consoles
-    destinations = destinationsData.destinations;
+      destinations = destinationsData.destinations;
       console.log("destinations - In THEN of PromiseAll:", destinations);//consoles
     })
     .catch(error => {
@@ -87,21 +87,21 @@ function sparkle(event) {
 /* ~~~~~~~~~~ Helper functions to get traveler info  ~~~~~~~~~~*/
 const getTravelerInfo = (userID) => {
   console.log("getTravelerInfo", userID) //consoles
-return travelers.find(traveler => traveler.id === userID);
+  return travelers.find(traveler => traveler.id === userID);
 };
 
 const getPastTrips = (userID) => {
   console.log('getPastTrips called with userID:', userID); //consoles
-return trips.filter(trip => trip.userID === userID && trip.status === 'approved');
+  return trips.filter(trip => trip.userID === userID && trip.status === 'approved');
 };
 
 const getUpcomingTrips = (userID) => {
   console.log('getUpcomingTrips called with userID:', userID);//consoles
-return trips.filter(trip => trip.userID === userID && trip.status === 'pending');
+  return trips.filter(trip => trip.userID === userID && trip.status === 'pending');
 };
 
 const getDestinationInfo = (destinationID) => {
-  console.log('getDestinationInfo called with destinationID:', destinationID );//consoles
+  console.log('getDestinationInfo called with destinationID:', destinationID);//consoles
   const destination = destinations.find(destination => destination.id === destinationID);
   console.log('getDestinationInfo returned: ', destination);  //consoles
   return destination;
@@ -129,7 +129,7 @@ function checkUserLogin(event) {
   event.preventDefault();
   const id = +usernameInput.value.match(/\d+/g);
   console.log('usernameInput:', id); //consoles
-  const string = usernameInput.value.slice(0, 8); 
+  const string = usernameInput.value.slice(0, 8);
   //8 is the number of letters in the word traveler
   console.log('usernameInput:', string); //consoles
 
@@ -160,24 +160,24 @@ function updateDOM() {
   showUpcomingTrips(newUser.id);
   showTotalSpent(newUser.id);
   displayWelcomeMessage(newUser);
-  displayDestinationsList(newUser);
+  displayDestinationsList();
 };
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  
-//comes from trips - 
-// {
-// "id": 1,
-// "userID": 44,
-// "destinationID": 49,
-// "travelers": 1,
-// "date": "2022/09/16",
-// "duration": 8,
-// "status": "approved",
-// "suggestedActivities": []
-// },
-  
+
+  //comes from trips - 
+  // {
+  // "id": 1,
+  // "userID": 44,
+  // "destinationID": 49,
+  // "travelers": 1,
+  // "date": "2022/09/16",
+  // "duration": 8,
+  // "status": "approved",
+  // "suggestedActivities": []
+  // },
+
   const data = {
     "id": parseInt(trips.length + 1),
     "userID": newUser.id,
@@ -199,9 +199,9 @@ form.addEventListener('submit', (event) => {
       'Content-Type': 'application/json'
     }
   })
-  .then(data => data.json())
-  .then(json => console.log(json))
-  .catch(err => console.log(`Error at: ${err}`));
+    .then(data => data.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(`Error at: ${err}`));
 
   showUpdatedUpcomingTrips(data);
   event.target.reset();
@@ -220,8 +220,8 @@ form.addEventListener('input', () => {
     console.log(numTravelersInput.value); //consoles
     console.log("durationInput.value: ", durationInput.value); //consoles
     const totalCost = getCostOfDestination(
-      parseInt(destinationDropdown.value), 
-      parseInt(numTravelersInput.value), 
+      parseInt(destinationDropdown.value),
+      parseInt(numTravelersInput.value),
       parseInt(durationInput.value));
     let dollarUSLocale = Intl.NumberFormat('en-US');
     let totalPrice = dollarUSLocale.format(totalCost);
@@ -240,7 +240,7 @@ export {
   getTravelerInfo,
   getPastTrips,
   getUpcomingTrips,
-  getDestinationInfo, 
+  getDestinationInfo,
   getCostOfDestination,
   checkUserLogin,
   displayCalendar,
