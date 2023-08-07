@@ -275,7 +275,6 @@ header {
 }
 
 .header-welcome {
-  /* font-family: 'Great Vibes', cursive; */
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   transition: transform 0.3s ease;
@@ -311,7 +310,6 @@ header {
   padding: 0;
 }
 
-/* Form Styles */
 #form {
   max-width: 400px;
   margin: 20px auto;
@@ -388,7 +386,6 @@ header {
   padding-left: 0;
 }
 
-/* Image Styles */
 img {
   margin: 10px;
 }
