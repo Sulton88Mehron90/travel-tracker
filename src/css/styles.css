@@ -110,7 +110,7 @@ header {
   justify-content: flex-end;
 }
 
-/* LOGIN FORM */
+/* login form */
 #login-heading {
   margin-bottom: 20px;
   position: relative;
@@ -169,6 +169,20 @@ header {
   background-color: #39FF14;
 }
 
+#loginError {
+  width: 40%;
+  margin-left: -10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.1);
+  text-align: center;
+}
+
 #login-section,
 #traveler-dashboard {
   margin: auto;
@@ -204,7 +218,7 @@ header {
   height: 100%;
 }
 
-/* Styling for Widgets */
+/* Widgets */
 .widget::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -329,7 +343,8 @@ header {
   border-radius: 3px;
 }
 
-#estimatedCost, #xyam{
+#estimatedCost,
+#xyam {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -357,13 +372,19 @@ header {
   background-color: #0abdef;
 }
 
-#pastTrips.widget, #upcomingTrips.widget {
-  color: rgb(250, 247, 247);  /* font color */
-  text-align: center; /* center the text */
-  margin: auto; /* center the sections in their container */
-  font-family: 'Arial', sans-serif; /* stylish font */
+#pastTrips.widget,
+#upcomingTrips.widget {
+  color: rgb(250, 247, 247);
+  text-align: center;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
-  font-weight: bold; /* make it bold for stylish */
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+img {
+  margin: 10px;
 }
 
 /* Image Styles */
@@ -429,7 +450,7 @@ header {
   background-color: #dc0c17;
 }
 
-/* RESPONSIVE CSS */
+/* responsive */
 @media screen and (max-width: 768px) {
 
   .right-align {
