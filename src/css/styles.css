@@ -22,7 +22,6 @@ header {
 }
 
 /* skip to the main content of the page */
-
 .skip-link {
   position: absolute;
   top: -40px;
@@ -39,8 +38,7 @@ header {
   top: 0;
 }
 
-/* HEADER CONTENT */
-
+/* header content */
 .header-content {
   display: flex;
   align-items: center;
@@ -55,11 +53,10 @@ header {
   margin-bottom: 4px;
 }
 
-/* TITLE */
-
+/* title */
 .title {
   font-family: 'Great Vibes', cursive;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   transition: transform 0.3s ease;
 }
 
@@ -67,8 +64,7 @@ header {
   transform: scale(2.5) translateX(5px) translateY(4px);
 }
 
-/* MAGNIFY ON HOVER */
-
+/* magnify on hover */
 .magnify-on-hover {
   transition: transform 0.3s ease;
 }
@@ -77,7 +73,7 @@ header {
   transform: scale(1.2);
 }
 
-/* LOGO */
+/* logo */
 #logo {
   width: 100px;
   height: 100px;
@@ -93,7 +89,7 @@ header {
 }
 
 #logo:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
   background-color: #C0C0C0;
 }
 
@@ -102,7 +98,7 @@ header {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: radial-gradient(circle, #c0c0c0 0%, rgba(0,0,255,0.6) 70%, rgba(12, 234, 34, 0) 100%);
+  background: radial-gradient(circle, #c0c0c0 0%, rgba(0, 0, 255, 0.6) 70%, rgba(12, 234, 34, 0) 100%);
   border-radius: 50%;
   pointer-events: none;
   mix-blend-mode: screen;
@@ -120,7 +116,7 @@ header {
 #login-heading {
   margin-bottom: 20px;
   /* visibility: hidden;  */
-  position: relative; 
+  position: relative;
 }
 
 #login-heading:hover {
@@ -128,29 +124,29 @@ header {
 }
 
 #login-heading::after {
-  content: "Greetings, please feel free to proceed."; 
+  content: "Greetings, please feel free to proceed.";
   color: white;
   font-size: 50px;
   font-family: 'Great Vibes', cursive;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.3s ease;
   position: absolute;
   bottom: 20px;
-  left: 10px; 
-  visibility: hidden; 
+  left: 10px;
+  visibility: hidden;
   /* visibility: visible;  */
-  opacity: 1; 
+  opacity: 1;
 }
 
 #login-heading:hover::after {
-  opacity: 1; 
-  visibility: visible; 
+  opacity: 1;
+  visibility: visible;
 }
 
 #login-form input {
-  display: block; 
+  display: block;
   width: 20%;
-  padding: 5px; 
+  padding: 5px;
   margin-bottom: 20px;
 }
 
@@ -161,8 +157,8 @@ header {
 }
 
 #login-form button {
-  padding: 10px 20px; 
-  font-size: 16px; 
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
   border-radius: 60%;
@@ -173,7 +169,7 @@ header {
 }
 
 #login-form button:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
   background-color: #39FF14;
 }
 
@@ -181,10 +177,10 @@ header {
 #login-section,
 #traveler-dashboard {
   margin: auto;
-  width: 75%; 
-  font-family: 'Raleway', sans-serif; 
-  font-size:24px;
-  padding: 200px; 
+  width: 75%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  padding: 200px;
 }
 
 /* GREEN */
@@ -192,10 +188,10 @@ header {
   width: 800px;
   height: 800px;
   margin: 80px;
-  position:absolute;
+  position: absolute;
   top: 100px;
-  right: 180px; 
-  margin-top:auto;
+  right: 180px;
+  margin-top: auto;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
   border-radius: 50%;
@@ -261,38 +257,38 @@ header {
 }
 
 /* Home Page */
-.logo{
+.logo {
   height: 120px;
   width: 200px;
-  margin-right: 50px; 
+  margin-right: 50px;
 }
 
-.home-page{
+.home-page {
   height: 100%;
 }
 
 #dateElement {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  font-family: 'Roboto', sans-serif; 
-  font-size: 1em;                  
-  color: #f4eeee;                      
-  text-align: center;         
-  padding: 10px;                   
-  margin: 0;                        
-  background-color:radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
-  border-bottom: 1px solid #39FF14;     
-  position: absolute;               
-  top: 80px;                      
-  left: 80%;                     
-  transform: translateX(-50%);   
-  z-index: 1000;                  
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #f4eeee;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
+  border-bottom: 1px solid #39FF14;
+  position: absolute;
+  top: 80px;
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
 
 .header-welcome {
   /* font-family: 'Great Vibes', cursive; */
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   transition: transform 0.3s ease;
   /* transition: all 0.3s ease; */
   background-color: rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%;
@@ -333,28 +329,43 @@ header {
 .widget-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px; 
-  margin-top: 100px; 
+  gap: 20px;
+  margin-top: 100px;
 }
 
 .widget {
-  font-family: 'Arial', sans-serif; 
-  font-size: 16px; 
-  font-weight: normal; 
-  color: #f6eeee; 
-  text-rendering: optimizeLegibility; 
-  -webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale; 
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #f6eeee;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   max-width: 450px;
-  max-height: 600px; 
+  max-height: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #08ab44;
+  /* background-color: #08ab44; */
   border-radius: 5px;
-  overflow: auto; 
+  overflow: auto;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3), 0 6px 6px rgba(255, 255, 255, 0.4);
 }
 
+
+widget::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+widget::-webkit-scrollbar-thumb {
+  background-color: #10ea3c;
+  border-radius: 5px;
+}
+
+widget::-webkit-scrollbar-track {
+  background-color: #10ea3c;
+  ;
+}
 
 /* Form Styles */
 #form {
@@ -364,7 +375,7 @@ header {
   background-color: #130101;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  grid-column: 2; 
+  grid-column: 2;
 }
 
 #form h1 {
@@ -403,13 +414,13 @@ header {
   border-radius: 3px;
   cursor: pointer;
   margin-bottom: 20px;
-  font-family: 'Arial', sans-serif; 
-  font-size: 16px; 
-  font-weight: normal; 
-  color: #040000; 
-  text-rendering: optimizeLegibility; 
-  -webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale; 
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #040000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #submitTrip:hover {
@@ -435,7 +446,7 @@ header {
 }
 
 #airplane {
-  width: 300px; 
+  width: 300px;
   height: 300px;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
@@ -454,6 +465,7 @@ header {
   transform: scale(1.2);
   background-color: #0abdef;
 }
+
 #airplane:hover {
   transform: scale(1.2);
   background-color: #dc0c17;
@@ -492,24 +504,30 @@ header {
   }
 
   #submitTrip {
-    text-align: center; 
+    text-align: center;
     font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  #green, #airplane, #in-a-hurry {
+
+  #green,
+  #airplane,
+  #in-a-hurry {
     width: 600px;
     height: 600px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #green, #airplane, #in-a-hurry {
+
+  #green,
+  #airplane,
+  #in-a-hurry {
     width: 400px;
     height: 400px;
   }
-  
+
   #login-section,
   #traveler-dashboard,
   #agent-dashboard {
@@ -518,11 +536,14 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
-  #green, #airplane, #in-a-hurry {
+
+  #green,
+  #airplane,
+  #in-a-hurry {
     width: 200px;
     height: 200px;
   }
-  
+
   #login-section,
   #traveler-dashboard,
   #agent-dashboard {
@@ -539,7 +560,7 @@ header {
     margin-top: 10px;
     font-size: 18px;
   }
-  
+
   #logo {
     margin: 10px auto;
     width: 30px;

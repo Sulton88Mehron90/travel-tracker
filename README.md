@@ -33,7 +33,7 @@ Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwa
 
 ## Wins/Challenges:
 Challenges: 
-- One of the challenges I faced was 
+- Faced complexities while implementing the user login authentication mechanism. The challenges were primarily around extracting and validating the user ID from the input string, ensuring the ID was within an acceptable range. This required string manipulations, value validations, and DOM interactions. Addressing these intricacies provided invaluable insights into form handling in JavaScript.
 
 Wins: 
  - Effectively fetched data from an API.
@@ -41,3 +41,4 @@ Wins:
  - Made effective use of iterators.
  - Successfully created a login page.
  - Successfully use of DayJS.
+ - Employed Test-Driven Development (TDD) methodologies throughout the project lifecycle

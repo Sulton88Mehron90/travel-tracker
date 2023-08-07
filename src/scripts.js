@@ -147,7 +147,7 @@ function checkUserLogin(event) {
 
     loginSection.classList.add("hidden");
     homePage.classList.remove('hidden');
-    updateDOM(newUser);
+    updateDOM();
   } else {
     console.log('Invalid credentials.');
   }
