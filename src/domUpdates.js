@@ -1,14 +1,10 @@
 import {
   currentDate,
   destinations,
-  newUser,
-  getTravelerInfo,
   getPastTrips,
   getUpcomingTrips,
   getDestinationInfo, 
   getCostOfDestination,
-  checkUserLogin,
-  showUpdatedUpcomingTrips
 } from './scripts';
 
 /* ~~~~~~~~~~ QUERY SELECTORS ~~~~~~~~~~*/

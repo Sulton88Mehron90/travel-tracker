@@ -1,4 +1,4 @@
-/* ~~~~~~~~~~ IMPORTS ~~~~~~~~~~*/
+/* ~~~~~~~~~~ imports ~~~~~~~~~~*/
 import './css/styles.css';
 import './images/turing-logo.png';
 import './images/parvin-going-home.jpg';
@@ -123,7 +123,6 @@ const getCostOfDestination = (destinationID, numTravelers, duration) => {
 }
 
 /* ~~~~~~~~~~ Login form submit event  ~~~~~~~~~~*/
-
 loginForm.addEventListener('submit', checkUserLogin);
 
 function checkUserLogin(event) {
@@ -147,9 +146,10 @@ function checkUserLogin(event) {
 
     loginSection.classList.add("hidden");
     homePage.classList.remove('hidden');
-    updateDOM(newUser);
+    updateDOM();
   } else {
-    console.log('Invalid credentials.');
+    console.log('Invalid credentials.') //consoles
+    document.getElementById('loginError').classList.remove('hidden');
   }
 };
 
