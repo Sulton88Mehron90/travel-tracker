@@ -4,7 +4,8 @@
 This web application was designed to provide a user-friendly dashboard displaying comprehensive information about a user's past and upcoming trips. Upon logging in with their credentials, users are directed to their homepage where they can easily view their travel history and schedule new adventures. I integrated the application with a local server, enabling it to make network requests to various API endpoints for data retrieval and manipulation. Furthermore, users can seamlessly post to the trips endpoint of the API, instantly reflecting their newly booked trips on the user interface.
 
 ## Setup
-1. Fork and Clone the Main Repo [repo](https://github.com/sarahcatherine311/travel-tracker):
+1. Fork and Clone the Main Repo [repo](https://github.com/Sulton88Mehron90/travel-tracker):
+
 Go to the main repository on GitHub.
 Click on the "Fork" button at the top right to create a copy of the repository in your own GitHub account.
 Once forked, click on the "Code" button and copy the SSH link.
@@ -36,10 +37,10 @@ Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwa
 
 <table>
      <tr>
-        <td> Taranveer Singh <a href="https://github.com/taranveersingh93">Github</td>
+        <td> Parvin A. Sattorova <a href="https://github.com/Sulton88Mehron90">Github</td>
     </tr>
     <tr>
-        <td><img src="https://avatars.githubusercontent.com/u/122247155?v=4" alt="Parvin GH img"
+        <td><img src="https://avatars.githubusercontent.com" alt="Parvin GH img"
     width="150" height="auto" /></td>
     </tr>
 </table>
