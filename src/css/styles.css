@@ -153,20 +153,25 @@ header {
 }
 
 #login-form button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 19px;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
   border-radius: 60%;
   display: inline-block;
   transition: transform 0.3s ease;
   transform: scale(1);
-  background-color: #C0C0C0;
+  background-color: white;
+  background-image: url('../images/plane.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
 }
 
 #login-form button:hover {
   transform: scale(1.2);
-  background-color: #39FF14;
+  background-color: white;
 }
 
 #loginError {
@@ -272,6 +277,9 @@ header {
   left: 80%;
   transform: translateX(-50%);
   z-index: 1000;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header-welcome {
@@ -287,10 +295,27 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 100px;
-  left: 40%;
+  top: 75px;
+  left: 73.5%;
   right: 500px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#omarKhayyam {
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #f7f3f3;
+  margin: 20px 0;
+  text-align: center;
+  border-top: 1px solid #10ea3c;
+  border-bottom: 1px solid #10ea3c;
+  padding: 20px 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-section {
@@ -364,6 +389,8 @@ header {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 1;
 }
 
 #submitTrip:hover {
@@ -424,6 +451,7 @@ img {
   top: 50%;
   right: 31%;
   transform: translate(50%, 50%);
+  z-index: 2;
 }
 
 #airplane {
@@ -440,6 +468,7 @@ img {
   top: 50%;
   left: 31%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 #in-a-hurry:hover {

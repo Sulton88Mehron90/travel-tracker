@@ -4,6 +4,7 @@ import './images/turing-logo.png';
 import './images/parvin-going-home.jpg';
 import './images/taking-picture.png';
 import './images/in-a-hurry.png';
+import './images/plane.png'
 import dayjs from 'dayjs';
 import { fetchTravelers, fetchTrips, fetchDestinations } from './apiCalls';
 import {
@@ -171,9 +172,6 @@ form.addEventListener('submit', (event) => {
     "suggestedActivities": []
   };
 
-  console.log('Calendar', data.date) //consoles
-  console.log(calendar.firstChild.value) //consoles
-
   fetch('http://localhost:3001/api/v1/trips', {
     method: 'POST',
     body: JSON.stringify(data),
@@ -207,8 +205,10 @@ form.addEventListener('input', () => {
       parseInt(durationInput.value));
     let dollarUSLocale = Intl.NumberFormat('en-US');
     let totalPrice = dollarUSLocale.format(totalCost);
-    estimatedCost.innerText = `The estimated cost of this trip is ${totalPrice}!`;
-  };
+    estimatedCost.innerHTML = `The estimated cost of this trip is <stron>${totalPrice}</strong>!`;
+  } else {
+    estimatedCost.innerText = "Please provide the number of travelers and duration to estimate the cost.";
+  }
 });
 
 /* ~~~~~~~~~~ exports ~~~~~~~~~~*/

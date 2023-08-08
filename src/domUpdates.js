@@ -7,7 +7,7 @@ import {
   getCostOfDestination,
 } from './scripts';
 
-/* ~~~~~~~~~~ query selectors ~~~~~~~~~~*/
+/* ~~~~~~~~~~ QUERY SELECTORS ~~~~~~~~~~*/
 
 const loginSection = document.querySelector('#login-section');
 const homePage = document.querySelector('#homePage');
@@ -25,7 +25,7 @@ const numTravelersInput = document.querySelector('#numTravelersInput');
 const durationInput = document.querySelector('#durationInput');
 const destinationDropdown = document.querySelector('#destinationDropdown');
 
-/* ~~~~ DOM manipulation function ~~~~*/
+/* ~~~~ DOM MANIPULATION FUNCTIONS ~~~~*/
 
 function displayCalendar() {
     calendar.innerHTML = `<input id="dateInput" type="date" min="${currentDate.split('/').join('-')}" name="calendar" placeholder="yyyy/mm/dd" required>`;
@@ -88,7 +88,7 @@ function showTotalSpent(userId) {
   totalSpent.innerHTML = `Total amount spent on trips: <strong> $${totalPrice} </strong>`;
 };
 
-/* ~~~~~~~~~~ exports ~~~~~~~~~~*/
+/* ~~~~~~~~~~ EXPORTS ~~~~~~~~~~*/
 
 export {
   loginForm,
