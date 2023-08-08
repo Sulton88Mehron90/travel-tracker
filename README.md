@@ -37,15 +37,6 @@ Javascript | Mocha & Chai | API | CSS | HTML
 ## Countributors:
 Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/) || [github](https://github.com/Sulton88Mehron90)  
 
-<!-- <table>
-     <tr>
-        <td> Parvin <a href="https://github.com/Sulton88Mehron90">Github</td>
-    </tr>
-    <tr>
-        <td><img src="https://avatars.githubusercontent.com" alt="Parvin GH img"
-    width="150" height="auto" /></td>
-    </tr>
-</table> -->
 
 ## Wins/Challenges:
 Challenges: 
