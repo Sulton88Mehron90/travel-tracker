@@ -29,13 +29,17 @@ Javascript | Mocha & Chai | API | CSS | HTML
 
 ## Countributors:
 <table>
-     <tr>
-        <td> Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/) || [github](https://github.com/Sulton88Mehron90) </td>
+    <tr>
+        <td> Parvin A. Sattorova 
+            <a href="https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/">LinkedIn</a> || 
+            <a href="https://github.com/Sulton88Mehron90">GitHub</a> 
+        </td>
     </tr>
     <tr>
         <td><img src="https://avatars.githubusercontent.com/u/119267809?v=4" alt="GitHub Avatar" width="150"></td>
     </tr>
 </table>
+
 
 ## Wins/Challenges:
 Challenges: 
