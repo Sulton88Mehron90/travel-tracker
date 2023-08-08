@@ -153,8 +153,8 @@ header {
 }
 
 #login-form button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 19px;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
   border-radius: 60%;
@@ -164,8 +164,8 @@ header {
   background-color: white;
   background-image: url('../images/plane.png');
   background-size: cover;
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 50%;
 }
 

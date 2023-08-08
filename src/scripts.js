@@ -195,7 +195,6 @@ function showUpdatedUpcomingTrips(data) {
   `;
 };
 
-//estimated cost for the trip
 form.addEventListener('input', () => {
   if (numTravelersInput.value && durationInput.value) {
     console.log(numTravelersInput.value); //consoles
