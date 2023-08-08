@@ -19,7 +19,7 @@ Next: ```npm start``` in the terminal to see the HTML page
 ```Control + C``` is the command to stop running the local server
 
 ## Preview of App
-![preview-of-app](https://media.giphy.com/) 
+![preview-of-app](https://youtu.be/kXw2OpQBgp4) 
 
 ## Reflections: 
 I am currently in the last week of Module Two at the Turing School of Software and Design's Front End Web Development program. This program consists of four modules spanning seven months, and is focused on preparing students for a career as web developers. We work extensively with JavaScript, HTML, CSS. This is my second solo project, which I completed in 7 days, adhering to the project specifications and rubric detailed [here](https://frontend.turing.edu/projects/travel-tracker.html). 
@@ -29,6 +29,16 @@ Javascript | Mocha & Chai | API | CSS | HTML
 
 ## Countributors:
 Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/) || [github](https://github.com/Sulton88Mehron90) 
+
+<table>
+     <tr>
+        <td> Parvin A. Sattorova <a href="https://github.com/Sulton88Mehron90">Github</td>
+    </tr>
+    <tr>
+        <td><img src="https://avatars.githubusercontent.com/u/119267809?v=4" alt="GitHub Avatar" width="150">
+ /></td>
+    </tr>
+</table>
 
 ## Wins/Challenges:
 Challenges: 
