@@ -185,6 +185,7 @@ form.addEventListener('submit', (event) => {
 
   showUpdatedUpcomingTrips(data);
   event.target.reset();
+  estimatedCost.innerText = "Please provide the number of travelers and duration to estimate the cost.";
 });
 
 function showUpdatedUpcomingTrips(data) {
@@ -205,7 +206,7 @@ form.addEventListener('input', () => {
       parseInt(durationInput.value));
     let dollarUSLocale = Intl.NumberFormat('en-US');
     let totalPrice = dollarUSLocale.format(totalCost);
-    estimatedCost.innerHTML = `The estimated cost of this trip is <stron>${totalPrice}</strong>!`;
+    estimatedCost.innerText = `The estimated cost of this trip is ${totalPrice}!`;
   } else {
     estimatedCost.innerText = "Please provide the number of travelers and duration to estimate the cost.";
   }
