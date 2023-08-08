@@ -42,6 +42,16 @@ Javascript | Mocha & Chai | API | CSS | HTML
 ## Countributors:
 Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/) || [github](https://github.com/Sulton88Mehron90)  
 
+<table>
+     <tr>
+        <td> Taranveer Singh <a href="https://github.com/taranveersingh93">Github</td>
+    </tr>
+    <tr>
+        <td><img src="https://avatars.githubusercontent.com/u/122247155?v=4" alt="Parvin GH img"
+    width="150" height="auto" /></td>
+    </tr>
+</table>
+
 ## Wins/Challenges:
 Challenges: 
 - Faced complexities while implementing the user login authentication mechanism. The challenges were primarily around extracting and validating the user ID from the input string, ensuring the ID was within an acceptable range. This required string manipulations, value validations, and DOM interactions. Addressing these intricacies provided invaluable insights into form handling in JavaScript.
