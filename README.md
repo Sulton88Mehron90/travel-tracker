@@ -11,26 +11,19 @@ Click on the "Fork" button at the top right to create a copy of the repository i
 Once forked, click on the "Code" button and copy the SSH link.
 Open your terminal and navigate to the directory where you want to clone the repository.
 Run the following command: ```git clone [copied SSH link]```
-
 This will create a new folder on your machine with the contents of the repository.
-
 2. In a different folder Fork and Clone the Local Server Repo [local server repo](https://github.com/turingschool-examples/travel-tracker-api):
-
 Repeat the steps above for the local server repository.
-
-- Setting Up Dependencies:
-
+3. Setting Up Dependencies:
 For both repositories, you need to install necessary dependencies and start the local servers.
-- Install Dependencies and Start the Server:
-  Navigate to the root directory of the cloned repo: ```cd [name of the cloned directory]```
-  Install the required libraries and dependencies: ```npm install```
-  Start the local server: ```npm start``` in the terminal to see the HTML page
-  Note: Ensure both repositories are running simultaneously for the app to function correctly.
-
+Install Dependencies and Start the Server:
+Navigate to the root directory of the cloned repo: ```cd [name of the cloned directory]```
+Install the required libraries and dependencies: ```npm install```
+Start the local server: ```npm start``` in the terminal to see the HTML page
+## Note: Ensure both repositories are running simultaneously for the app to function correctly.
 ```Control + C``` is the command to stop running the local server
 
 ## Preview of App
-
 ![preview-of-app](https://media.giphy.com/) 
 
 ## Reflections: 
