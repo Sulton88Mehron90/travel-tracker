@@ -44,7 +44,7 @@ Parvin A. Sattorova [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwa
 
 <table>
      <tr>
-        <td> Taranveer Singh <a href="https://github.com/Sulton88Mehron90">Github</td>
+        <td> Parvin A. Sattorova <a href="https://github.com/Sulton88Mehron90">Github</td>
     </tr>
     <tr>
         <td><img src="https://avatars.githubusercontent.com" alt="Parvin GH img"
