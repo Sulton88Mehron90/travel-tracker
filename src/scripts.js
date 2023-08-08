@@ -185,6 +185,7 @@ form.addEventListener('submit', (event) => {
 
   showUpdatedUpcomingTrips(data);
   event.target.reset();
+  estimatedCost.innerText = "Please provide the number of travelers and duration to estimate the cost.";
 });
 
 function showUpdatedUpcomingTrips(data) {
