@@ -276,10 +276,10 @@ header {
   top: 80px;
   left: 80%;
   transform: translateX(-50%);
-  z-index: 1000;
   top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .header-welcome {
@@ -451,7 +451,7 @@ img {
   top: 50%;
   right: 31%;
   transform: translate(50%, 50%);
-  z-index: 2;
+  z-index: 3;
 }
 
 #airplane {
@@ -468,7 +468,7 @@ img {
   top: 50%;
   left: 31%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
 }
 
 #in-a-hurry:hover {
@@ -490,7 +490,8 @@ img {
   }
 
   #airplane,
-  #in-a-hurry {
+  #in-a-hurry,
+  #dateElement {
     margin: 10px auto;
   }
 
@@ -523,7 +524,8 @@ img {
 
   #green,
   #airplane,
-  #in-a-hurry {
+  #in-a-hurry,
+  #dateElement {
     width: 600px;
     height: 600px;
   }
@@ -533,14 +535,14 @@ img {
 
   #green,
   #airplane,
-  #in-a-hurry {
+  #in-a-hurry,
+  #dateElement {
     width: 400px;
     height: 400px;
   }
 
   #login-section,
-  #traveler-dashboard,
-  #agent-dashboard {
+  #traveler-dashboard {
     width: 90%;
   }
 }
@@ -549,14 +551,14 @@ img {
 
   #green,
   #airplane,
-  #in-a-hurry {
+  #in-a-hurry,
+  #dateElement {
     width: 200px;
     height: 200px;
   }
 
   #login-section,
-  #traveler-dashboard,
-  #agent-dashboard {
+  #traveler-dashboard {
     width: 100%;
   }
 

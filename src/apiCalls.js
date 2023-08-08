@@ -7,7 +7,6 @@ function fetchData(endpoint) {
       return response.json();
     })
     .then(data => {
-      console.log("after the JASON promise resolves in the fetchData function", data);
       return data;
     })
     .catch(error => {
