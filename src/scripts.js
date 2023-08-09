@@ -24,13 +24,15 @@ import {
   displayDestinationsList,
   showPastTrips,
   showUpcomingTrips,
-  showTotalSpent
+  showTotalSpent,
+  form
 } from './domUpdates';
 
 /* ~~~~~~~~~~ GLOBAL VARIABLES ~~~~~~~~~~*/
 let date = new Date();
 let currentDate = date.getFullYear() + "/" + ("0" + (date.getMonth() + 1)).slice(-2) + "/" + ("0" + date.getDate()).slice(-2);
 let travelers, trips, destinations, newUser;
+
 
 /* ~~~~~~~~~~ FETCH REQUEST ~~~~~~~~~~*/
 window.addEventListener('load', function () {
@@ -54,7 +56,7 @@ function updateDateTime() {
   const now = dayjs();
   const formattedDate = now.format('dddd, MMMM D YYYY, h:mm A');
   document.getElementById('dateElement').innerText = formattedDate;
-};
+}
 
 setInterval(updateDateTime, 60000);
 updateDateTime();
@@ -107,7 +109,8 @@ loginForm.addEventListener('submit', checkUserLogin);
 
 function checkUserLogin(event) {
   event.preventDefault();
-  const id = +usernameInput.value.match(/\d+/g);
+  // const id = +usernameInput.value.match(/\d+/g);
+  const id = +usernameInput.value.match((/\d+$/));
   const string = usernameInput.value.slice(0, 8);
 
   if (
@@ -124,7 +127,7 @@ function checkUserLogin(event) {
   } else {
     document.getElementById('loginError').classList.remove('hidden');
   }
-};
+}
 
 function updateDOM() {
   displayCalendar();
@@ -133,7 +136,7 @@ function updateDOM() {
   showTotalSpent(newUser.id);
   displayWelcomeMessage(newUser);
   displayDestinationsList();
-};
+}
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -171,7 +174,7 @@ function showUpdatedUpcomingTrips(data) {
   <li style="font-size: 1.5em">${data.date}: ${destinationInfo.destination} <span style='color: red;'>*pending*</span></li>
   <img src=${destinationInfo.image} alt=${destinationInfo.alt} width="350" height="250"/>
   `;
-};
+}
 
 form.addEventListener('input', () => {
   if (numTravelersInput.value && durationInput.value) {
