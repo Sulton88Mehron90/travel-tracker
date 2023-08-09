@@ -13,19 +13,19 @@ function fetchData(endpoint) {
       console.error(error);
       throw new Error(`An error occurred while fetching ${endpoint}.`);
     });
-};
+}
 
 function fetchTravelers() {
   return fetchData('travelers');
-};
+}
 
 function fetchTrips() {
   return fetchData('trips');
-};
+}
 
 function fetchDestinations() {
   return fetchData('destinations');
-};
+}
 
 
 export { fetchTravelers, fetchTrips, fetchDestinations };

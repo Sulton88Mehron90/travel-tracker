@@ -17,8 +17,9 @@
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "linebreak-style": ["error", "unix"],
-    "max-len": ["warn", 80],
-    "new-cap": ["error", { "newIsCap": true }],
+    "max-len": ["warn", 250],
+    // "new-cap": ["error", { "newIsCap": true }],
+    "new-cap": ["error", { "capIsNewExceptions": ["Intl.NumberFormat"] }],
     "object-shorthand": ["error", "always"],
     "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }],
     "space-infix-ops": ["error", { "int32Hint": false }]

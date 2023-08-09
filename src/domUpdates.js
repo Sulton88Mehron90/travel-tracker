@@ -28,11 +28,11 @@ const destinationDropdown = document.querySelector('#destinationDropdown');
 /* ~~~~ DOM MANIPULATION FUNCTIONS ~~~~*/
 function displayCalendar() {
   calendar.innerHTML = `<input id="dateInput" type="date" min="${currentDate.split('/').join('-')}" name="calendar" placeholder="yyyy/mm/dd" required>`;
-};
+}
 
 function displayWelcomeMessage(newUser) {
   headerWelcome.innerText = `Welcome, ${newUser.name}!`;
-};
+}
 
 function displayDestinationsList() {
   destinations.forEach(destination => {
@@ -40,7 +40,7 @@ function displayDestinationsList() {
         <option value="${destination.id}">${destination.destination}</option>
       `;
   });
-};
+}
 
 function showPastTrips(userId) {
   let pastTrips = getPastTrips(userId);
@@ -54,7 +54,7 @@ function showPastTrips(userId) {
     <img src=${destinationInfo.image} alt=${destinationInfo.alt} width="350" height="250"/></li>
     `;
   });
-};
+}
 
 function showUpcomingTrips(userId) {
   let upcomingTrips = getUpcomingTrips(userId);
@@ -67,7 +67,7 @@ function showUpcomingTrips(userId) {
     <img src=${destinationInfo.image} alt=${destinationInfo.alt} width="350" height="250"/></li>
     `;
   });
-};
+}
 
 function showTotalSpent(userId) {
   const pastTrips = getPastTrips(userId);
@@ -78,7 +78,7 @@ function showTotalSpent(userId) {
   let dollarUSLocale = Intl.NumberFormat('en-US');
   let totalPrice = dollarUSLocale.format(totalCost);
   totalSpent.innerHTML = `Total amount spent on trips: <strong> $${totalPrice} </strong>`;
-};
+}
 
 /* ~~~~~~~~~~ EXPORTS ~~~~~~~~~~*/
 export {
