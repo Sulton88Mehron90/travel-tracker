@@ -109,7 +109,6 @@ loginForm.addEventListener('submit', checkUserLogin);
 
 function checkUserLogin(event) {
   event.preventDefault();
-  // const id = +usernameInput.value.match(/\d+/g);
   const id = +usernameInput.value.match((/\d+$/));
   const string = usernameInput.value.slice(0, 8);
 
