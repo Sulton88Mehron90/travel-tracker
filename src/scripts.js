@@ -33,7 +33,6 @@ let date = new Date();
 let currentDate = date.getFullYear() + "/" + ("0" + (date.getMonth() + 1)).slice(-2) + "/" + ("0" + date.getDate()).slice(-2);
 let travelers, trips, destinations, newUser;
 
-
 /* ~~~~~~~~~~ FETCH REQUEST ~~~~~~~~~~*/
 window.addEventListener('load', function () {
   Promise.all([fetchTravelers(), fetchTrips(), fetchDestinations()])
@@ -161,6 +160,16 @@ form.addEventListener('submit', (event) => {
     .then(data => data.json())
     .then(json => console.log(json))
     .catch(err => console.log(`Error at: ${err}`));
+
+    Promise.all([fetchTravelers(), fetchTrips(), fetchDestinations()])
+    .then(([travelersData, tripsData, destinationsData]) => {
+      travelers = travelersData.travelers;
+      trips = tripsData.trips;
+      destinations = destinationsData.destinations;
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch', error);
+    });
 
   showUpdatedUpcomingTrips(data);
   event.target.reset();
