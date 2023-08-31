@@ -11,6 +11,7 @@ describe('getTravelerInfo', () => {
       name: 'Rachael Vaughten',
       travelerType: 'thrill-seeker'
     });
+
   });
 
   it('should return undefined if the traveler is not found', () => {
