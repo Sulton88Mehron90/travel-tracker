@@ -16,7 +16,7 @@
 // }
 
 function fetchData(endpoint) {
-  return fetch(`https://travel-tracker-api-sage.vercel.app/api/v1/${endpoint}`)
+  return fetch(`https://travel-tracker-api-psi.vercel.app/api/v1/${endpoint}`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to fetch ${endpoint}`);
