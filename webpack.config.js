@@ -4,13 +4,23 @@ module.exports = {
   "mode": "none",
   "entry": "./src/scripts.js",
   "output": {
-    "path": __dirname + '/dist',
+    "path": __dirname + '/public',
     "filename": "bundle.js",
     sourceMapFilename: "bundle.js.map"
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist')
+    contentBase: path.join(__dirname, 'public')
   },
+  
+  // "output": {
+  //   "path": __dirname + '/dist',
+  //   "filename": "bundle.js",
+  //   sourceMapFilename: "bundle.js.map"
+  // },
+  // devServer: {
+  //   contentBase: path.join(__dirname, 'dist')
+  // },
+
   "devtool": "source-map",
   "module": {
     "rules": [
