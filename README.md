@@ -23,8 +23,10 @@ Next: ```npm start``` in the terminal to see the HTML page
 
 ### Preview of App
 [![App Preview](./src/images/parvingoinghome.jpg)](https://youtu.be/kXw2OpQBgp4)
+<!-- ---
+[![App Preview](https://github.com/Sulton88Mehron90/travel-tracker/blob/main/src/images/traveltracker.gif) -->
 
-### Deployment airplane 🛫
+### Deployment 🛫
 [Travel Tracker on Vercel](https://travel-tracker-jr3eg5hd6-sulton88mehron90.vercel.app/)
 
 ### Reflections: 
