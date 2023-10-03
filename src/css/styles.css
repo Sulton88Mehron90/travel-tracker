@@ -137,7 +137,6 @@ header {
   white-space: nowrap;
 }
 
-
 #login-form input {
   display: block;
   width: 200px;
@@ -492,7 +491,34 @@ body.logged-in #green {
 }
 
 /* responsive */
-@media screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1024px) {
+  #green, #airplane, #in-a-hurry {
+    width: 300px;
+    height: 300px;
+  }
+
+  #login-section,
+  #traveler-dashboard,
+  #agent-dashboard {
+    width: 90%;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .widget-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
 
   .right-align {
     justify-content: center;
@@ -508,9 +534,121 @@ body.logged-in #green {
   #form {
     max-width: 90%;
   }
+
+  .header-content h1 {
+    font-size: 20px; 
+    margin: 10px 0; 
+  }
+
+  #omarKhayyam {
+    font-size: 1rem; 
+    margin-left: 100px; /* Adjusted */
+    padding: 50px;
+  }
+
+  .header-welcome {
+    font-size: 0.9rem;
+    width: 50%; 
+    top: 30px; 
+    left: 60%; 
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
+
+  #login-section,
+  #traveler-dashboard,
+  #agent-dashboard {
+    width: 90%; 
+  }
+
+  #logo {
+    margin: 20px auto; 
+    width: 60px;
+    height: 60px;
+  }
+
+  h1, h2 {
+    font-size: 1.0rem;
+  }
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  .widget-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .right-align {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #green {
+    width: 100px;
+    height: 100px;
+  }
+
+  #airplane,
+  #in-a-hurry {
+    margin: 90px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 11rem;
+  }
+
+  #dateElement {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #f4eeee;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
+    border-bottom: 1px solid #39FF14;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+
+  .widget,
+  #form {
+    max-width: 70%;
+  }
+
+  img {
+    width: 20rem;
+  }
+
+  .header-content h1 {
+    font-size: 16px; 
+    margin: 10px 0; 
+  }
+
+  #omarKhayyam {
+    font-size: 0.7rem; 
+    margin-left: 20px;
+    padding: 20px; 
+  }
+
+  .header-welcome {
+    font-size: 0.7rem;  
+    width: 70%; 
+    top: 80px;  
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 480px) {
 
   #form label {
     font-size: 14px;
@@ -527,41 +665,10 @@ body.logged-in #green {
     text-align: center;
     font-size: 16px;
   }
-}
 
-@media only screen and (max-width: 1024px) {
-
-  #green,
-  #airplane,
-  #in-a-hurry {
-    width: 600px;
-    height: 600px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  #green,
-  #airplane,
-  #in-a-hurry {
-    width: 400px;
-    height: 400px;
-  }
-
-  #login-section,
-  #traveler-dashboard,
-  #agent-dashboard {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-
-  #green,
-  #airplane,
-  #in-a-hurry {
-    width: 200px;
-    height: 200px;
+  #green, #airplane, #in-a-hurry {
+    width: 100px;
+    height: 100px;
   }
 
   #login-section,
@@ -585,5 +692,31 @@ body.logged-in #green {
     margin: 10px auto;
     width: 30px;
     height: 30px;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  .header-content h1 {
+    font-size: 20px; 
+    margin: 10px 0; 
+  }
+
+  #omarKhayyam {
+    font-size: 1rem; 
+    margin-left: 200px;
+    padding: 50px;
+  }
+
+  .header-welcome {
+    font-size: 0.9rem;
+    width: 50%; 
+    top: 30px; 
+    left: 60%; 
   }
 }
