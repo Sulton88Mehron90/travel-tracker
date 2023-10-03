@@ -25,10 +25,10 @@ Next: ```npm start``` in the terminal to see the HTML page
 [![App Preview](./src/images/parvingoinghome.jpg)](https://youtu.be/kXw2OpQBgp4)
 <!-- ---
 [![App Preview](https://github.com/Sulton88Mehron90/travel-tracker/blob/main/src/images/traveltracker.gif) 
-
-### Deployment 🛫
-[Travel Tracker on Vercel](https://travel-tracker-jr3eg5hd6-sulton88mehron90.vercel.app/)
 -->
+### Deployment 🛫
+[Travel Tracker on Vercel](https://travel-tracker-xi.vercel.app/)
+
 ### Reflections: 
 I am currently in the last week of Module Two at the Turing School of Software and Design's Front End Web Development program. This program consists of four modules spanning seven months, and is focused on preparing students for a career as web developers. We work extensively with JavaScript, HTML, CSS. This is my second solo project, which I completed in 7 days, adhering to the project specifications and rubric detailed [here](https://frontend.turing.edu/projects/travel-tracker.html). 
 
