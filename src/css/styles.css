@@ -48,8 +48,8 @@ header {
 
 .header-content h1 {
   font-style: italic;
-  margin-left: 29px;
-  font-size: 38px;
+  margin-left: 15px;
+  font-size: 27px;
   margin-bottom: 4px;
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 .magnify-on-hover:hover {
-  transform: scale(1.2);
+  transform: scale(0.2);
 }
 
 /* logo */
@@ -111,6 +111,14 @@ header {
 }
 
 /* login form */
+
+#main-content {
+  position: relative;
+  margin-top: -8rem;
+  margin-left: -5rem;
+}
+
+
 #login-heading {
   margin-bottom: 20px;
   position: relative;
@@ -123,13 +131,12 @@ header {
 #login-heading::after {
   content: "Greetings, please feel free to proceed.";
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Great Vibes', cursive;
-  opacity: 0;
   transition: opacity 0.3s ease;
   position: absolute;
   bottom: 20px;
-  left: 10px;
+  left: 0.9px;
   visibility: hidden;
   opacity: 1;
 }
@@ -153,25 +160,20 @@ header {
 }
 
 #login-form button {
-  padding: 20px 30px;
-  font-size: 19px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
   border-radius: 60%;
   display: inline-block;
   transition: transform 0.3s ease;
   transform: scale(1);
-  background-color: white;
-  background-image: url('../images/plane.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
+  background-color: #C0C0C0;
 }
 
 #login-form button:hover {
   transform: scale(1.2);
-  background-color: white;
+  background-color: #39FF14;
 }
 
 #loginError {
@@ -273,10 +275,10 @@ header {
   background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
   border-bottom: 1px solid #39FF14;
   position: absolute;
-  /* top: 10px; */
-  left: 43%;
-  /* transform: translate(-50%, -50%); */
-  z-index: 2;
+  top: 80px;
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
 .header-welcome {
@@ -292,27 +294,10 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 75px;
-  left: 73.5%;
+  top: 100px;
+  left: 40%;
   right: 500px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-#omarKhayyam {
-  font-style: italic;
-  font-family: 'Georgia', serif;
-  font-size: 19px;
-  line-height: 1.6;
-  color: #f7f3f3;
-  margin: 20px 0;
-  text-align: center;
-  border-top: 1px solid #10ea3c;
-  border-bottom: 1px solid #10ea3c;
-  padding: 20px 0;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .main-section {
@@ -386,8 +371,6 @@ header {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  z-index: 1;
 }
 
 #submitTrip:hover {
@@ -415,12 +398,12 @@ img {
 }
 
 #green {
-  width: 800px;
-  height: 800px;
+  width: 38rem;
+  height: 38rem;
   margin: 80px;
   position: absolute;
-  top: 100px;
-  right: 180px;
+  top: -0.5rem;
+  right: 0.1rem;
   margin-top: auto;
   cursor: pointer;
   border: 3px solid rgb(11, 166, 52);
@@ -430,7 +413,7 @@ img {
 }
 
 #green:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: #39FF14;
 }
 
@@ -448,7 +431,6 @@ img {
   top: 50%;
   right: 31%;
   transform: translate(50%, 50%);
-  z-index: 3;
 }
 
 #airplane {
@@ -465,7 +447,6 @@ img {
   top: 50%;
   left: 31%;
   transform: translate(-50%, -50%);
-  z-index: 3;
 }
 
 #in-a-hurry:hover {
@@ -478,202 +459,16 @@ img {
   background-color: #dc0c17;
 }
 
-/* Grid Layout */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
+/* responsive */
+@media screen and (max-width: 768px) {
 
-.grid-item {
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-/* media query */
-@media only screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  h1, h2, h3 {
-    font-size: smaller;
-}
-
-  #green {
-    width: 300px;
-    height: 300px;
-    margin-top: 10%;
-    margin-right: -20%;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-}
-
-#login-form input, select {
-  width: 100%;
-}
-
-#logo {
-  width: 60px;
-  height: 60px;
-}
-
-  .widget, #form {
-      max-width: 100%;
-  }
-
-  #green,
-  #airplane,
-  #in-a-hurry,
-  #dateElement {
-    width: 300px;
-    height: 300px;
-  }
-
-  #login-section {
-    width: 80%;
-    margin-right: 150%;
-    font-size: smaller;
-    margin-top: -18%;
-  }
-
-  #login-form button {
-    padding: 20px 30px;
-    font-size: 10px;
-    cursor: pointer;
-    border: 3px solid rgb(11, 166, 52);
-    border-radius: 60%;
-    display: inline-block;
-    transition: transform 0.3s ease;
-    transform: scale(1);
-    background-color: white;
-    background-image: url('../images/plane.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-  }
-
-  /* title */
-  .title {
-    font-family: 'Great Vibes', cursive;
-    letter-spacing: 1px;
-    font-size: smaller;
-    transition: transform 0.3s ease;
-  }
-
-  .title:hover {
-    transform: scale(2.5) translateX(5px) translateY(4px);
-  }
-
-  /* magnify on hover */
-  .magnify-on-hover {
-    transition: transform 0.3s ease;
-  }
-
-  .magnify-on-hover:hover {
-    transform: scale(1.2);
-  }
-
-  /* logo */
-  #logo {
-    width: 60px;
-    height: 60px;
-    margin: 30px;
-    margin-top: 30px;
-    cursor: pointer;
-    border: 3px solid rgb(11, 166, 52);
-    border-radius: 50%;
-    padding: 10px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-    object-fit: contain;
-  }
-
-  #logo:hover {
-    transform: scale(1.2);
-    background-color: #C0C0C0;
-  }
-
-  /* #traveler-dashboard {
-    width: 20%;
-  } */
-
-  /* .right-align {
+  .right-align {
     justify-content: center;
     flex-wrap: wrap;
-  } */
-
-
-  #dateElement {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    color: #f4eeee;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
-    border-bottom: 1px solid #39FF14;
-    position: absolute;
-    top: 80px;
-    left: 80%;
-    transform: translateX(-50%);
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-
-  .header-welcome {
-    font-family: 'Roboto', sans-serif;
-    transition: transform 0.3s ease;
-    background-color: rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%;
-    letter-spacing: 2px;
-    font-size: 1em;
-    width: 10%;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    /* top: 70px; */
-    /* left: 73.5%; */
-    /* right: 500px; */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
-
-  #omarKhayyam {
-    font-style: italic;
-    font-family: 'Georgia', serif;
-    font-size: 10px;
-    line-height: 1.6;
-    color: #f7f3f3;
-    margin: 20px 0;
-    text-align: center;
-    border-top: 1px solid #10ea3c;
-    border-bottom: 1px solid #10ea3c;
-    padding: 20px 0;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .main-section {
-    display: flex;
-    justify-content: space-evenly;
-    height: 85%;
-    align-items: center;
   }
 
   #airplane,
-  #in-a-hurry,
-  #dateElement {
+  #in-a-hurry {
     margin: 10px auto;
   }
 
@@ -681,16 +476,9 @@ img {
   #form {
     max-width: 90%;
   }
-
 }
 
-@media only screen and (max-width: 480px) {
-
-  #login-section {
-    width: 95%;
-    margin-right: auto;
-    margin-left: auto;
-  }
+@media screen and (max-width: 480px) {
 
   #form label {
     font-size: 14px;
@@ -707,17 +495,46 @@ img {
     text-align: center;
     font-size: 16px;
   }
+}
+
+@media only screen and (max-width: 1024px) {
 
   #green,
   #airplane,
-  #in-a-hurry,
-  #dateElement {
+  #in-a-hurry {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #green,
+  #airplane,
+  #in-a-hurry {
+    width: 400px;
+    height: 400px;
+  }
+
+  #login-section,
+  #traveler-dashboard,
+  #agent-dashboard {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  #green,
+  #airplane,
+  #in-a-hurry {
     width: 200px;
     height: 200px;
   }
 
   #login-section,
-  #traveler-dashboard {
+  #traveler-dashboard,
+  #agent-dashboard {
     width: 100%;
   }
 
@@ -736,26 +553,5 @@ img {
     margin: 10px auto;
     width: 30px;
     height: 30px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #green,
-  #airplane,
-  #in-a-hurry,
-  #dateElement {
-    width: 600px;
-    height: 600px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
