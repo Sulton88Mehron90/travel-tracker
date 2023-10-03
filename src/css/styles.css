@@ -273,12 +273,9 @@ header {
   background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
   border-bottom: 1px solid #39FF14;
   position: absolute;
-  top: 80px;
-  left: 80%;
-  transform: translateX(-50%);
-  top: 72%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* top: 10px; */
+  left: 43%;
+  /* transform: translate(-50%, -50%); */
   z-index: 2;
 }
 
@@ -481,12 +478,197 @@ img {
   background-color: #dc0c17;
 }
 
-/* responsive */
-@media screen and (max-width: 768px) {
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
 
-  .right-align {
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  h1, h2, h3 {
+    font-size: smaller;
+}
+
+  #green {
+    width: 300px;
+    height: 300px;
+    margin-top: 10%;
+    margin-right: -20%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+#login-form input, select {
+  width: 100%;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+}
+
+  .widget, #form {
+      max-width: 100%;
+  }
+
+  #green,
+  #airplane,
+  #in-a-hurry,
+  #dateElement {
+    width: 300px;
+    height: 300px;
+  }
+
+  #login-section {
+    width: 80%;
+    margin-right: 150%;
+    font-size: smaller;
+    margin-top: -18%;
+  }
+
+  #login-form button {
+    padding: 20px 30px;
+    font-size: 10px;
+    cursor: pointer;
+    border: 3px solid rgb(11, 166, 52);
+    border-radius: 60%;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    background-color: white;
+    background-image: url('../images/plane.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  /* title */
+  .title {
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 1px;
+    font-size: smaller;
+    transition: transform 0.3s ease;
+  }
+
+  .title:hover {
+    transform: scale(2.5) translateX(5px) translateY(4px);
+  }
+
+  /* magnify on hover */
+  .magnify-on-hover {
+    transition: transform 0.3s ease;
+  }
+
+  .magnify-on-hover:hover {
+    transform: scale(1.2);
+  }
+
+  /* logo */
+  #logo {
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 3px solid rgb(11, 166, 52);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+  }
+
+  #logo:hover {
+    transform: scale(1.2);
+    background-color: #C0C0C0;
+  }
+
+  /* #traveler-dashboard {
+    width: 20%;
+  } */
+
+  /* .right-align {
     justify-content: center;
     flex-wrap: wrap;
+  } */
+
+
+  #dateElement {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #f4eeee;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
+    border-bottom: 1px solid #39FF14;
+    position: absolute;
+    top: 80px;
+    left: 80%;
+    transform: translateX(-50%);
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .header-welcome {
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease;
+    background-color: rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%;
+    letter-spacing: 2px;
+    font-size: 1em;
+    width: 10%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* top: 70px; */
+    /* left: 73.5%; */
+    /* right: 500px; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  #omarKhayyam {
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #f7f3f3;
+    margin: 20px 0;
+    text-align: center;
+    border-top: 1px solid #10ea3c;
+    border-bottom: 1px solid #10ea3c;
+    padding: 20px 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 85%;
+    align-items: center;
   }
 
   #airplane,
@@ -499,9 +681,16 @@ img {
   #form {
     max-width: 90%;
   }
+
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+
+  #login-section {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   #form label {
     font-size: 14px;
@@ -518,36 +707,6 @@ img {
     text-align: center;
     font-size: 16px;
   }
-}
-
-@media only screen and (max-width: 1024px) {
-
-  #green,
-  #airplane,
-  #in-a-hurry,
-  #dateElement {
-    width: 600px;
-    height: 600px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  #green,
-  #airplane,
-  #in-a-hurry,
-  #dateElement {
-    width: 400px;
-    height: 400px;
-  }
-
-  #login-section,
-  #traveler-dashboard {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
 
   #green,
   #airplane,
@@ -577,5 +736,26 @@ img {
     margin: 10px auto;
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #green,
+  #airplane,
+  #in-a-hurry,
+  #dateElement {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
