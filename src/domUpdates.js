@@ -9,6 +9,8 @@ import {
 } from './scripts';
 
 /* ~~~~~~~~~~ QUERY SELECTORS ~~~~~~~~~~*/
+const logo = document.querySelector('#logo');
+const greenImage = document.querySelector('#green');
 const loginSection = document.querySelector('#login-section');
 const homePage = document.querySelector('#homePage');
 const loginForm = document.querySelector('#login-form');
@@ -26,6 +28,15 @@ const durationInput = document.querySelector('#durationInput');
 const destinationDropdown = document.querySelector('#destinationDropdown');
 
 /* ~~~~ DOM MANIPULATION FUNCTIONS ~~~~*/
+logo.addEventListener('click', redirectToLogin);
+document.body.classList.add('logged-in');
+
+function redirectToLogin() {
+  homePage.classList.add('hidden');
+  loginSection.classList.remove('hidden');
+  document.body.classList.remove('logged-in');
+}
+
 function displayCalendar() {
   calendar.innerHTML = `<input id="dateInput" type="date" min="${currentDate.split('/').join('-')}" name="calendar" placeholder="yyyy/mm/dd" required>`;
 }
