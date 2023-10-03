@@ -285,15 +285,15 @@ header {
   transition: transform 0.3s ease;
   background-color: rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%;
   letter-spacing: 2px;
-  font-size: 1em;
+  font-size: 1.0em;
   width: 20%;
   padding: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 42px;
-  left: 75%;
+  top: 40px;
+  left: 74%;
   right: 500px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -408,13 +408,13 @@ img {
 #omarKhayyam {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 1px; 
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   position: absolute;
-  top: 0.2rem;
-  margin-left: 440px;
+  top: 0.3rem;
+  margin-left: 400px;
   text-align: center;
   z-index: 2;
-  padding: 100px; 
+  padding: 90px; 
   border-radius: 5px; 
 }
 
