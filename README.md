@@ -6,6 +6,9 @@ Travel Dashboard serves as an intuitive interface that gives users a holistic vi
 - 👤 Username: `traveler<ID>` (replace `<ID>` with your user ID, e.g., `traveler50`)
 - 🔒 Password: `travel`
 
+### Deployment 🛫
+[Travel Tracker on Vercel](https://travel-tracker-xi.vercel.app/)
+
 ### Setup
 Fork and clone this [repo](https://github.com/Sulton88Mehron90/travel-tracker) and then in a different folder, fork and clone this [local server repo](https://github.com/turingschool-examples/travel-tracker-api).
 
@@ -26,8 +29,6 @@ Next: ```npm start``` in the terminal to see the HTML page
 <!-- ---
 [![App Preview](https://github.com/Sulton88Mehron90/travel-tracker/blob/main/src/images/traveltracker.gif) 
 -->
-### Deployment 🛫
-[Travel Tracker on Vercel](https://travel-tracker-xi.vercel.app/)
 
 ### Reflections: 
 I am currently in the last week of Module Two at the Turing School of Software and Design's Front End Web Development program. This program consists of four modules spanning seven months, and is focused on preparing students for a career as web developers. We work extensively with JavaScript, HTML, CSS. This is my second solo project, which I completed in 7 days, adhering to the project specifications and rubric detailed [here](https://frontend.turing.edu/projects/travel-tracker.html). 
