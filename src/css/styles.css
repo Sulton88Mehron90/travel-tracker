@@ -396,6 +396,10 @@ img {
   margin: 10px;
 }
 
+body.logged-in #green {
+  display: none;
+}
+
 #green {
   width: 38rem;
   height: 38rem;
