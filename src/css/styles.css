@@ -273,8 +273,8 @@ header {
   background-color: radial-gradient(circle, rgb(5, 98, 45) 0%, rgb(1, 24, 8) 100%);
   border-bottom: 1px solid #39FF14;
   position: absolute;
-  top: 80px;
-  left: 80%;
+  top: 49rem;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
 }
