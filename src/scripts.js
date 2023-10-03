@@ -106,27 +106,6 @@ const getCostOfDestination = (destinationID, numTravelers, duration) => {
 /* ~~~~~~~~~~ LOGIN FORM ~~~~~~~~~~*/
 loginForm.addEventListener('submit', checkUserLogin);
 
-// function checkUserLogin(event) {
-//   event.preventDefault();
-//   const id = +usernameInput.value.match((/\d+$/));
-//   const string = usernameInput.value.slice(0, 8);
-
-//   if (
-//     string === "traveler" &&
-//     Number(id) > 0 &&
-//     Number(id) <= 50 &&
-//     passwordInput.value === "travel"
-//   ) {
-//     newUser = getTravelerInfo(Number(id));
-
-//     loginSection.classList.add("hidden");
-//     homePage.classList.remove('hidden');
-//     updateDOM();
-//   } else {
-//     document.getElementById('loginError').classList.remove('hidden');
-//   }
-// }
-
 function checkUserLogin(event) {
   event.preventDefault();
   const id = +usernameInput.value.match((/\d+$/));
@@ -143,6 +122,7 @@ function checkUserLogin(event) {
     loginSection.classList.add("hidden");
     homePage.classList.remove('hidden');
     document.body.classList.add('logged-in');
+    document.getElementById('green').style.display = 'none';
     updateDOM();
   } else {
     document.getElementById('loginError').classList.remove('hidden');

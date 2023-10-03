@@ -29,12 +29,12 @@ const destinationDropdown = document.querySelector('#destinationDropdown');
 
 /* ~~~~ DOM MANIPULATION FUNCTIONS ~~~~*/
 logo.addEventListener('click', redirectToLogin);
-document.body.classList.add('logged-in');
 
 function redirectToLogin() {
   homePage.classList.add('hidden');
   loginSection.classList.remove('hidden');
   document.body.classList.remove('logged-in');
+  document.getElementById('green').style.display = 'block';
 }
 
 function displayCalendar() {
